@@ -1,0 +1,18 @@
+.Importante{color: red;}
+
+form-control{min-width:300px;}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+
+#subtitulo{
+    margin-left: 2.5%;
+}
+H2{
+    margin-left: 2.5%;
+}
