@@ -45,3 +45,15 @@ h2{color: rgb(0, 68, 255);}
 .textodesc{
     font-size: 14px;
 }
+.download-link{display:flex;
+padding:10px 20px;
+background-color: #003367;
+color: white;
+text-align: center;
+border-radius: 15px;
+margin-right: 90% ;
+font-weight: bold;
+text-decoration: none;}
+
+#download-f1{background-color: #003367;}
+    
