@@ -23,7 +23,8 @@ section{
     padding: 5%;
     background-color: aliceblue;
     font-size: large;
-    margin: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
     box-shadow: 0px 0px 6px black;
     border-radius: 15px;
 
@@ -45,15 +46,16 @@ h2{color: rgb(0, 68, 255);}
 .textodesc{
     font-size: 14px;
 }
-.download-link{display:flex;
+.download-link{
 padding:10px 20px;
 background-color: #003367;
 color: white;
-text-align: center;
 border-radius: 15px;
-margin-right: 90% ;
+margin-left: 30%;
 font-weight: bold;
-text-decoration: none;}
+text-decoration: none;
+text-align: justify;}
+
 
 #download-f1{background-color: #003367;}
     
