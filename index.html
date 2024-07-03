@@ -21,24 +21,23 @@
     </header>
     <section>
         <div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+
+            </div>
+            <br><br>
 
             <!--Subtitulo 1-->
             <div>
                 <h2>Identificação do Empreendimento:</h2>
                 <br>
-                <p>Legislação Pertinente</p>
-                <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del0227.htm">Inciso II, art.38, Código de Mineração</a>
+                <div class="leis">
+                <p><b>Legislação Pertinente</b></p>
+                    <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del0227.htm">Inciso II, art.38, Código de Mineração</a>
+                </div>
             </div>
             <br>
 
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
-            </div>
-
-            <br><br>
-            <p>Link alternativo para todos os formulários no botão abaixo:</p>
-            <br>
-            <a href="https://drive.google.com/drive/folders/1YoluCYxpVeKWnZK-N_2DpBq_wBv39moU?usp=drive_link" download class="download-link" >Formulários</a>
 
             <form>
                 
@@ -95,7 +94,7 @@
                 </div>
                 <div>
                     <br><br>
-                    <label>4. Descreva a Localidade com as devidas cordenadas de referência da Lavra ultilizando como referencia UTM ou Datum SIRGAS2000.</label>
+                    <label>4. Descreva a localidade com as devidas coordenadas de referência da Lavra ultilizando como referencia UTM ou Datum SIRGAS2000.</label>
                     <p> </p>
                     <input type="TEXT" id="NE"class="form-control">        
                 </div>
@@ -137,8 +136,10 @@
                     <br><br><br>
                     <h2>Verificação da tempestidade do requerimento de lavra:</h2>
                     <br>
-                    <p>Consulta de Lei</p>
-                    <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del0227.htm">Art.31, Código de Mineração</a>
+                    <div class="leis">
+                    <p><b>Legislação Pertinente</b></p>
+                        <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del0227.htm">Art.31, Código de Mineração</a>
+                    </div>
                 </div>
 
                 <div>
@@ -192,28 +193,7 @@
 
                 <div>
                     <br><br>
-                    <label>16. Alvará de Pesquisa nº.<BR></label>
-                    <p> </p>
-                    <input type="number" id="NE"class="form-control">        
-                </div>
-
-                <div>
-                    <br><br>
-                    <label>17. Área de Proteção de Fonte.<BR></label>
-                    <p> </p>
-                    <input type="number" id="NE"class="form-control">        
-                </div>
-
-                <div>
-                    <br><br>
-                    <label>18. Área de Proteção de Fonte.<BR></label>
-                    <p> </p>
-                    <input type="number" id="NE"class="form-control">        
-                </div>
-
-                <div>
-                    <br><br>
-                    <label>19. Minuta de Portaria de Lavra.<BR></label>
+                    <label>16. Minuta de Portaria de Lavra.<BR></label>
                     <p> </p>
                     <input type="number" id="NE"class="form-control">        
                 </div>
@@ -223,28 +203,30 @@
                 <br><br><br>
                 <h2>Verificação de atos de cessão / transferência de direitos minerários:</h2>
                 <br>
-                <p>Legislação Pertinente</p>
+                <div class="leis">
+                <p><b>Legislação Pertinente</b></p>
                 <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del0227.htm">Inciso I, art.22, Código de Mineração</a>
+                </div>
             </div>
             <br>
 
             <div>
                 <br><br>
-                20. Data de averbação da cessão de direitos (total ou parcial) que resultou no atual titular do processo minerário em análise..
+                17. Data de averbação da cessão de direitos (total ou parcial) que resultou no atual titular do processo minerário em análise.
                 <p></p>
                 <input id="date" type="date"/>
             </div>
 
             <div>
                 <br><br>
-                <label>21. Processo minerário cedente.<BR></label>
+                <label>18. Processo minerário cedente.<BR></label>
                 <p> </p>
                 <input type="number" id="NE"class="form-control">        
             </div>
 
             <div>
                 <br><br>
-                <label>22. Nome do cedente.<BR></label>
+                <label>19. Nome do cedente.<BR></label>
                 <p> </p>
                 <input type="text" id="NE"class="form-control">        
             </div>
@@ -252,7 +234,7 @@
             <div>
 
                 <br><br>
-                <label>23. Nome do cessionário.<BR></label>
+                <label>20. Nome do cessionário.<BR></label>
                 <p> </p>
                 <input type="text" id="NE"class="form-control">        
                 </div>

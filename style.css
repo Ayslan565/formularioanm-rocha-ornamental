@@ -58,4 +58,11 @@ text-align: justify;}
 
 
 #download-f1{background-color: #003367;}
-    
+
+.leis{border: solid black 1px;
+    padding: 2%;
+    background-color: white;
+    border-radius: 15px;
+    margin-right: 75%;}
+
+.progress{border: solid black 1px;}
