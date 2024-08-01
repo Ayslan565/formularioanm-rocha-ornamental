@@ -37,21 +37,21 @@
             <form id="formulario">
                 <div>
                     <br><br>
-                    <label id="label-NUP" for="NUP">1. Escreva o <b>NUP</b> completo do processo </label>
+                    <label id="label-nup" for="nup">1. Escreva o <b>NUP</b> completo do processo </label>
                     <p> </p>
-                    <input type="number" id="NUP" class="form-control" required>
+                    <input type="number" id="nup" class="form-control" placeholder="NUP" required>
                 </div>
                 <div>
                     <br><br>
-                    <label id="labelNome-empresa">2. Nome da empresa</label>
+                    <label id="label-nome-empresa">2. Nome da empresa</label>
                     <p> </p>
-                    <input type="text" id="Nome-empresa" class="form-control" required>        
+                    <input type="text" id="nome-empresa" class="form-control" placeholder="Nome da Empresa" required>        
                 </div>
                 <div>
                     <br><br>
-                    <label id="labeluf" for="uf">3. Insira a UF</label>
+                    <label id="label-uf" for="uf">3. Insira a UF</label>
                     <p> </p>
-                    <select class="form-select" id="uf">
+                    <select class="form-select" id="uf" required>
                         <option value="">--Selecione--</option>
                         <option>AC</option>
                         <option>AL</option>
@@ -86,37 +86,36 @@
                     <br><br>
                     <label id="label-localidade-coordenadas">4. Descreva a localidade com as devidas coordenadas de referência da Lavra utilizando como referência UTM ou Datum SIRGAS2000.</label>
                     <p> </p>
-                    <input type="text" id="localidade-coordenadas" class="form-control" required>        
+                    <input type="text" id="localidade-coordenadas" class="form-control" placeholder="Localidade e Coordenadas" required>        
                 </div>
                 <div>
                     <br><br>
                     <label id="label-municipio">5. Escreva o nome do(s) município(s).</label>
-                    <p class="Importante">Para o caso de mais de uma substância aprovada do RFP, cujo aproveitamento de uma ou mais dessas substância não for requerida a lavra, apresentar a devida justificativa.</p>
                     <p> </p>
-                    <input type="text" id="municipio" class="form-control" required>   
+                    <input type="text" id="municipio" class="form-control" placeholder="Município(s)" required>   
                 </div>
                 <div>
                     <br><br>
                     <label id="label-substancia">6. Descreva a substância requerida para lavra.</label>
-                    <p class="Importante">Para o caso de mais de uma substância aprovada do RFP, cujo aproveitamento de uma ou mais dessas substância não for requerida a lavra, apresentar a devida justificativa.</p>
+                    <h7 class="Importante textodesc"><br>Para o caso de mais de uma substância aprovada do RFP, cujo aproveitamento de uma ou mais dessas substância não for requerida a lavra, apresentar a devida justificativa.</h7>
                     <p> </p>
-                    <input type="text" id="substancia" class="form-control" required>        
+                    <input type="text" id="substancia" class="form-control" placeholder="Substância" required>        
                 </div>
                 <div>
                     <br><br>
                     <label id="label-uso-substancia">7. Uso previsto para a substância.</label>
                     <p> </p>
-                    <input type="text" id="uso-substancia" class="form-control" required>        
+                    <input type="text" id="uso-substancia" class="form-control" placeholder="Uso da Substância" required>        
                 </div>
                 <div>
                     <br><br>
                     <label id="label-sub-aprov">8. Substância aprovada no Relatório Final de Pesquisa ou constante no processo oriundo de disponibilidade.</label>
                     <p></p>
                     <input class="form-check-input" type="radio" name="substancia-aprovada" id="sim-sub-aprovada" value="sim">
-                    <label id="labelSubs-aprv-sim" for="sim-sub-aprovada">Sim</label>
+                    <label id="label-sim-sub-aprovada" for="sim-sub-aprovada">Sim</label>
                     <p></p>
                     <input class="form-check-input" type="radio" name="substancia-aprovada" id="nao-sub-aprovada" value="nao">
-                    <label id="labelSubs-aprv-nao" for="nao-sub-aprovada">Não</label>
+                    <label id="label-nao-sub-aprovada" for="nao-sub-aprovada">Não</label>
                     <p></p>
                 </div>
                 <div>
@@ -130,51 +129,51 @@
                 </div>
                 <div>
                     <br><br>
-                    <label id="labeldata-rtf">9. Data de publicação no DOU da aprovação do Relatório Final de Pesquisa <b>(RFP)</b>.</label>
+                    <label id="label-data-rtf">9. Data de publicação no DOU da aprovação do Relatório Final de Pesquisa <b>(RFP)</b>.</label>
                     <p></p>
-                    <input id="data-rtf" type="date" class="form-control" required>
+                    <input id="data-rtf" type="date" class="form-control" placeholder="Data de Publicação do RFP" required>
                 </div>
                 <div>
                     <br><br>
-                    <label id="labeldata-rcl">10. Data de protocolo do pedido de prorrogação para apresentação do <b>(RCL)</b>.</label>
+                    <label id="label-data-rcl">10. Data de protocolo do pedido de prorrogação para apresentação do <b>(RCL)</b>.</label>
                     <p></p>
-                    <input id="rcl" type="date" class="form-control" required>
+                    <input id="data-rcl" type="date" class="form-control" placeholder="Data de Protocolo do RCL" required>
                 </div>
                 <div>
                     <br><br>
-                    <label id="labelpubl-DOU">11. Data de publicação no DOU da prorrogação do  <b>(RCL)</b>.</label>
+                    <label id="label-publ-dou">11. Data de publicação no DOU da prorrogação do  <b>(RCL)</b>.</label>
                     <p></p>
-                    <input id="publ-DOU" type="date" class="form-control" required>
+                    <input id="publ-dou" type="date" class="form-control" placeholder="Data de Publicação no DOU" required>
                 </div>
                 <div>
                     <br><br>
-                    <label id="labelproc-mine-ori-parc">12. Processo minerário de origem (em casos de cessão parcial e disponibilidade).</label>
+                    <label id="label-proc-mine-ori-parc">12. Processo minerário de origem (em casos de cessão parcial e disponibilidade).</label>
                     <p></p>
-                    <input id="proc-mine-ori-parc" type="text" class="form-control" required>
+                    <input id="proc-mine-ori-parc" type="text" class="form-control" placeholder="Processo Minerário de Origem" required>
                 </div>
                 <div>
                     <br><br>
-                    <label id="labelproc-mine-orig-total">13. Processo minerário de origem (em casos de cessão parcial e disponibilidade).</label>
+                    <label id="label-proc-mine-orig-total">13. Processo minerário de origem (em casos de cessão parcial e disponibilidade).</label>
                     <p> </p>
-                    <input type="number" id="proc-mine-orig-total" class="form-control" required>        
+                    <input type="number" id="proc-mine-orig-total" class="form-control" placeholder="Processo Minerário de Origem Total" required>        
                 </div>
                 <div>
                     <br><br>
-                    <label id="labelproc-assoc-engl-areas">14. Processos associados a englobamento de áreas.</label>
+                    <label id="label-proc-assoc-engl-areas">14. Processos associados a englobamento de áreas.</label>
                     <p> </p>
-                    <input type="number" id="proc-assoc-engl-areas" class="form-control" required>        
+                    <input type="number" id="proc-assoc-engl-areas" class="form-control" placeholder="Processos Associados a Englobamento de Áreas" required>        
                 </div>
                 <div>
                     <br><br>
-                    <label id="labelAlv-pesq">15. Alvará de Pesquisa nº.</label>
+                    <label id="label-alv-pesq">15. Alvará de Pesquisa nº.</label>
                     <p> </p>
-                    <input type="number" id="Alv-pesq" class="form-control" required>        
+                    <input type="number" id="alv-pesq" class="form-control" placeholder="Número do Alvará de Pesquisa" required>        
                 </div>
                 <div>
                     <br><br>
-                    <label id="labelminuta-porta-lavra">16. Minuta de Portaria de Lavra.</label>
+                    <label id="label-minuta-porta-lavra">16. Minuta de Portaria de Lavra.</label>
                     <p> </p>
-                    <input type="number" id="minuta-porta-lavra" class="form-control" required>        
+                    <input type="number" id="minuta-porta-lavra" class="form-control" placeholder="Minuta de Portaria de Lavra" required>        
                 </div>
                 <div>
                     <br><br>
@@ -187,36 +186,37 @@
                 </div>
                 <div>
                     <br><br>
-                    <label id="labelcessao-p-t">17. Data de averbação da cessão de direitos (total ou parcial) que resultou no atual titular do processo minerário em análise.</label>
+                    <label id="label-cessao-p-t">17. Data de averbação da cessão de direitos (total ou parcial) que resultou no atual titular do processo minerário em análise.</label>
                     <p></p>
-                    <input id="cessao-p-t" type="date" class="form-control" required>
+                    <input id="cessao-p-t" type="date" class="form-control" placeholder="Data de Averbação da Cessão de Direitos" required>
                 </div>
                 <div>
                     <br><br>
-                    <label id="labelproc-mine-cedent">18. Processo minerário cedente.</label>
+                    <label id="label-proc-mine-cedent">18. Processo minerário cedente.</label>
                     <p></p>
-                    <input type="number" id="proc-mine-cedent" class="form-control" required>        
+                    <input type="number" id="proc-mine-cedent" class="form-control" placeholder="Processo Minerário Cedente" required>        
                 </div>
                 <div>
                     <br><br>
-                    <label id="labelnome-cedent">19. Nome do cedente.</label>
+                    <label id="label-nome-cedent">19. Nome do cedente.</label>
                     <p> </p>
-                    <input type="text" id="nome-cedent" class="form-control" required>        
+                    <input type="text" id="nome-cedent" class="form-control" placeholder="Nome do Cedente" required>        
                 </div>
                 <div>
                     <br><br>
-                    <label id="labelnome-cessio">20. Nome do cessionário.</label>
+                    <label id="label-nome-cessio">20. Nome do cessionário.</label>
                     <p> </p>
-                    <input type="text" id="nome-cessio" class="form-control" required>        
-                    <div class="text-center mt-4">
-                        <button type="button" class="btn btn-primary" onclick="salvar()">Salvar e Avançar</button>
-                    </div>
-                        </form>
+                    <input type="text" id="nome-cessio" class="form-control" placeholder="Nome do Cessionário" required>        
+                </div>
+                <div class="text-center mt-4">
+                    <button type="button" class="btn btn-primary" onclick="salvar()">Salvar e Avançar</button>
+                </div>
+            </form>
             <div>
                 <br><br><br>
                 <nav aria-label="Page navigation example">
                     <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="index2.html">2</a></li>
                         <li class="page-item"><a class="page-link" href="index3.html">3</a></li>
                         <li class="page-item"><a class="page-link" href="index4.html">4</a></li>

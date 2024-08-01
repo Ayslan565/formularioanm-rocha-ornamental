@@ -22,204 +22,186 @@
         <div>
             <!--Barra de progresso-->
             <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">45%</div>
+                <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
             </div>
             <br><br>
 
             <!--Subtítulo 1-->
 
             <div>
-                <h2>Dimensão e número de  lajões</h2>
-                <br>
-            </div>
-            <br>
-
-
-
-            <form>
-                <div>
-                    <br><br>
-                    <label>47. Comprimento dos lajão (m)</label>
-                    <p> </p>
-                    <input type="number" id="NE"class="form-control" required>        
-                </div>
-
-                <div>
-                    <br><br>
-                    <label>48. Largura dos lajão (m)</label>
-                    <p> </p>
-                    <input type="number" id="NE"class="form-control" required>        
-                </div>
-
-                <div>
-                    <br><br>
-                    <label>49. Espessura do lajão (m):</label>
-                    <p> </p>
-                    <input type="number" id="NE"class="form-control" required>        
-                </div>
-
-                <div>
-                    <br><br>
-                    <label>50. Volume por lajão (m³)</label>
-                    <br><br>
-                    <p class="Importante textodesc"><b>Múltiplique:</b> O comprimento dos lajão (m) pela Largura
-                    dos lajão (m) e a Espessura do lajão (m):</p>
-                    <input type="number" id="NE"class="form-control" required>        
-                </div>
-
-                <div>
-                    <br><br>
-                    <label>51. Quantidade bruta de lajão desaclopado por mês (m3)</label>
-                    <input type="number" id="NE"class="form-control" required>        
-                </div>
-
-                <div>
-                    <br><br>
-                    <label>52. Quantidade bruta de lajão desaclopado por mês (m3)</label>
-                    <p> </p>
-                    <input type="number" id="NE"class="form-control" required>        
-                </div>
-
-                <div>
-                    <br><br>
-                    <label>53. Recuperação na lavra (%) </label>
-                    <br><br>
-                    <p class="Importante textodesc"><b>Múltiplique:</b> A quantidade bruta de lajão desaclopado por mês (m3) pela Recuperação na lavra (%) :</p>
-                    <p> </p>
-                    <input type="number" id="NE"class="form-control" required>        
-                </div>
-
-                <div>
-                    <br><br>
-                    <label>54. Volume total liquído por mês (m3):</label>
-                    <p> </p>
-                    <input type="number" id="NE"class="form-control" required>        
-                </div>
-
-                <div>
-                    <br><br>
-                    <label>55. Densidade in-situ da rocha (t/mk³)</label>
-                    <p></p>
-                    <p class="Importante textodesc"><b>Múltiplique:</b> O volume total liquído por mês (m3) pela Densidade in-situ da rocha (t/mk³)</p>
-                    <p> </p>
-                    <input type="number" id="NE"class="form-control" required>        
-                </div>
-
-                <div>
-                    <br><br>
-                    <label>56. Quantidade total liquído por mês (toneladas):</label>
-                    <p></p>
-                    <p class="Importante textodesc"><b>Múltiplique:</b> O volume total liquído por mês (m3) pela Densidade in-situ da rocha (t/mk³)</p>
-                    <p> </p>
-                    <input type="number" id="NE"class="form-control" required>        
-                </div>
-
-                <div>
-                    <br><br>
-                    <label>57. Nº lajões líquido estimado por mês:</label>
-                    <p></p>
-                    <p class="Importante textodesc"><b>Divida:</b> O volume total do Líquido por mês (m3) pelo volume do lajão (m³)</p>
-                    <p> </p>
-                    <input type="number" id="NE"class="form-control" required>        
-                </div>
-
-
-                <div>
-                    <br><br>
-                    <p>58. Selecione a forma terciária de bancadas </p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Lavra para pedra de talhe/cantaria</label>
-                    <p></p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Lavra de material capeado</label>
-                    <p></p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Lavra para produção de lajões (ardósias, quartzitos e outros)</label>
-                    <p></p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Não Possui</label>
-                    <br><br><br>
-                </div>
-                
-        
-        
-            <!--Subtítulo 2-->
-
-            <div>
-                <h2>Parâmetros referentes alavra de rochas ornamentais e de revestimento</h2>
-                <br>
+                <h2>Dimensão e número de lajões</h2>
             </div>
 
+            <form id="meu_formulario">
                 <div>
                     <br><br>
-                    <label>59. N° médio de bancadas</label>
-                    <p> </p>
-                    <input type="number" id="NE"class="form-control" required>        
+                    <label id="label_comprimento_lajao" for="comprimento_lajao">30. Comprimento dos lajões (m)</label>
+                    <input type="number" id="comprimento_lajao" class="form-control" placeholder="Digite o comprimento dos lajões" required>        
                 </div>
 
                 <div>
                     <br><br>
-                    <label>60. Nº médio de bancadas</label>
-                    <p> </p>
-                    <input type="number" id="NE"class="form-control" required>        
+                    <label id="label_largura_lajao" for="largura_lajao">31. Largura dos lajões (m)</label>
+                    <input type="number" id="largura_lajao" class="form-control" placeholder="Digite a largura dos lajões" required>        
                 </div>
 
                 <div>
                     <br><br>
-                    <label>61. Largura das bernas  (m)</label>
-                    <p> </p>
-                    <input type="number" id="NE"class="form-control" required>        
+                    <label id="label_espessura_lajao" for="espessura_lajao">32. Espessura dos lajões (m)</label>
+                    <input type="number" id="espessura_lajao" class="form-control" placeholder="Digite a espessura dos lajões" required>        
                 </div>
 
                 <div>
                     <br><br>
-                    <label>62. Ângulo médio de inclinação das faces dos taludes (º)</label>
-                    <p> </p>
-                    <input type="number" id="NE"class="form-control" required>        
-                </div>
-<!--Desenvolvido por Ayslan Araújo e José Miguel Madureira-->
-                <div>
+                    <label id="label_volume_lajao" for="volume_lajao">33. Volume por lajão (m³)</label>
                     <br><br>
-                    <label>63. Inclinação média das rampas de acesso as bancadas (m)</label>
-                    <p> </p>
-                    <input type="number" id="NE"class="form-control" required>        
+                    <p class="Importante textodesc"><b>Múltiplique:</b> O comprimento dos lajões (m) pela largura dos lajões (m) e a espessura dos lajões (m):</p>
+                    <input type="number" id="volume_lajao" class="form-control" placeholder="Digite o volume por lajão" required>        
                 </div>
 
                 <div>
                     <br><br>
-                    <label>64. Área média da praça de trabalho (m²)</label>
-                    <p> </p>
-                    <input type="number" id="NE"class="form-control" required>        
+                    <label id="label_quantidade_bruta_lajao_mes" for="quantidade_bruta_lajao_mes">34. Quantidade bruta de lajões desaclopados por mês (m³)</label>
+                    <input type="number" id="quantidade_bruta_lajao_mes" class="form-control" placeholder="Digite a quantidade bruta por mês" required>        
                 </div>
 
                 <div>
                     <br><br>
-                    <label>65. Inclinação média de drenagem (%)</label>
-                    <p> </p>
-                    <input type="number" id="NE"class="form-control" required>        
+                    <label id="label_quantidade_bruta_lajao_mes2" for="quantidade_bruta_lajao_mes2">35. Quantidade bruta de lajões desaclopados por mês (m³)</label>
+                    <input type="number" id="quantidade_bruta_lajao_mes2" class="form-control" placeholder="Digite a quantidade bruta por mês" required>        
                 </div>
 
+                <div>
+                    <br><br>
+                    <label id="label_recuperacao_lavra" for="recuperacao_lavra">36. Recuperação na lavra (%)</label>
+                    <br><br>
+                    <p class="Importante textodesc"><b>Múltiplique:</b> A quantidade bruta de lajões desaclopados por mês (m³) pela recuperação na lavra (%):</p>
+                    <input type="number" id="recuperacao_lavra" class="form-control" placeholder="Digite a recuperação na lavra" required>        
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label_volume_total_liquido_mes" for="volume_total_liquido_mes">37. Volume total líquido por mês (m³)</label>
+                    <input type="number" id="volume_total_liquido_mes" class="form-control" placeholder="Digite o volume total líquido por mês" required>        
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label_densidade_in_situ" for="densidade_in_situ">38. Densidade in-situ da rocha (t/m³)</label>
+                    <br><br>
+                    <p class="Importante textodesc"><b>Múltiplique:</b> O volume total líquido por mês (m³) pela densidade in-situ da rocha (t/m³)</p>
+                    <input type="number" id="densidade_in_situ" class="form-control" placeholder="Digite a densidade in-situ da rocha" required>        
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label_quantidade_total_liquido_mes" for="quantidade_total_liquido_mes">39. Quantidade total líquido por mês (toneladas)</label>
+                    <br><br>
+                    <p class="Importante textodesc"><b>Múltiplique:</b> O volume total líquido por mês (m³) pela densidade in-situ da rocha (t/m³)</p>
+                    <input type="number" id="quantidade_total_liquido_mes" class="form-control" placeholder="Digite a quantidade total líquida por mês" required>        
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label_numero_lajoes_mes" for="numero_lajoes_mes">40. Nº lajões líquidos estimados por mês</label>
+                    <br><br>
+                    <p class="Importante textodesc"><b>Divida:</b> O volume total líquido por mês (m³) pelo volume do lajão (m³)</p>
+                    <input type="number" id="numero_lajoes_mes" class="form-control" placeholder="Digite o nº de lajões líquidos estimados por mês" required>        
+                </div>
+
+                <div>
+                    <br><br>
+                    <p>41. Selecione a forma terciária de bancadas:</p>
+                    <br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="forma_bancadas" id="lavra_pedra_talhe" value="lavra_pedra_talhe" required>
+                        <label class="form-check-label" id="label_lavra_pedra_talhe" for="lavra_pedra_talhe">Lavra para pedra de talhe/cantaria</label>
+                    </div>
+                    <br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="forma_bancadas" id="lavra_material_capeado" value="lavra_material_capeado" required>
+                        <label class="form-check-label" id="label_lavra_material_capeado" for="lavra_material_capeado">Lavra de material capeado</label>
+                    </div>
+                    <br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="forma_bancadas" id="lavra_producao_lajao" value="lavra_producao_lajao" required>
+                        <label class="form-check-label" id="label_lavra_producao_lajao" for="lavra_producao_lajao">Lavra para produção de lajões (ardósias, quartzitos e outros)</label>
+                    </div>
+                    <br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="forma_bancadas" id="nao_possui" value="nao_possui" required>
+                        <label class="form-check-label" id="label_nao_possui" for="nao_possui">Não Possui</label>
+                    </div>
+                    <br><br>
+                </div>
+
+                <!--Subtítulo 2-->
+                <div>
+                    <h2>Parâmetros referentes à lavra de rochas ornamentais e de revestimento</h2>
+                    <br>
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label_numero_medio_bancadas" for="numero_medio_bancadas">42. Nº médio de bancadas</label>
+                    <input type="number" id="numero_medio_bancadas" class="form-control" placeholder="Digite o nº médio de bancadas" required>        
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label_numero_medio_bancadas2" for="numero_medio_bancadas2">43. Nº médio de bancadas</label>
+                    <input type="number" id="numero_medio_bancadas2" class="form-control" placeholder="Digite o nº médio de bancadas" required>        
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label_largura_bernas" for="largura_bernas">44. Largura das bernas (m)</label>
+                    <input type="number" id="largura_bernas" class="form-control" placeholder="Digite a largura das bernas" required>        
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label_angulo_inclinacao_faces" for="angulo_inclinacao_faces">45. Ângulo médio de inclinação das faces dos taludes (º)</label>
+                    <input type="number" id="angulo_inclinacao_faces" class="form-control" placeholder="Digite o ângulo médio de inclinação" required>        
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label_inclinacao_rampas" for="inclinacao_rampas">46. Inclinação média das rampas de acesso às bancadas (º)</label>
+                    <input type="number" id="inclinacao_rampas" class="form-control" placeholder="Digite a inclinação média das rampas" required>        
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label_area_praca_trabalho" for="area_praca_trabalho">47. Área média da praça de trabalho (m²)</label>
+                    <input type="number" id="area_praca_trabalho" class="form-control" placeholder="Digite a área média da praça de trabalho" required>        
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label_inclinacao_drenagem" for="inclinacao_drenagem">48. Inclinação média de drenagem (%)</label>
+                    <input type="number" id="inclinacao_drenagem" class="form-control" placeholder="Digite a inclinação média de drenagem" required>        
                 </div>
             </form>
         </div>
 
         <br>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button class="btn btn-primary me-md-2" type="button">Enviar e Avançar</button>
+            <button class="btn btn-primary me-md-2" type="button" onclick="validarFormulario()">Enviar e Avançar</button>
         </div>
 
         <div>
             <br><br><br>
             <nav aria-label="Page navigation example">
                 <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="index2.html">Pag. Anterior</a></li>
+                    <li class="page-item"><a class="page-link" href="index2.html">Página Anterior</a></li>
                     <li class="page-item"><a class="page-link" href="index.html">1</a></li>
-                    <li class="page-item"><a class="page-link" href="index2.html">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item "><a class="page-link" href="index2.html">2</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">3</a></li>
                     <li class="page-item"><a class="page-link" href="index4.html">4</a></li>
                     <li class="page-item"><a class="page-link" href="index5.html">5</a></li>
                     <li class="page-item"><a class="page-link" href="index6.html">6</a></li>
-                    <li class="page-item"><a class="page-link" href="index4.html">Pag. Seguinte</a></li>
+                    <li class="page-item"><a class="page-link" href="index4.html">Próxima Página</a></li>
                 </ul>
             </nav>
         </div>
@@ -228,7 +210,7 @@
     <!--Rodapé-->
     <footer>
         <img src="Imagens/Imagem_do_WhatsApp_de_2024-06-24_à_s__09.42.50_31c7da55-removebg-preview.png" width="200">
-        ©Todos os direitos Reservados - 2024
+        © Todos os direitos reservados - 2024
     </footer>
 </body>
 </html>

@@ -66,3 +66,15 @@ text-align: justify;}
     margin-right: 75%;}
 
 .progress{border: solid black 1px;}
+
+
+.pagination .page-item.active .page-link {
+    background-color: #007bff;
+    color: white; 
+    border-color: #007bff; 
+}
+
+.pagination .page-item.active .page-link:hover {
+    background-color: #0056b3; 
+    color: white; 
+}
