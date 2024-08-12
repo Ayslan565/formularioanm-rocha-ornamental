@@ -1,4 +1,4 @@
-// Selecionar os elementos e adicionar eventos de validação
+// Index 1
 let NUP = document.querySelector('#nup');
 let labelNUP = document.querySelector('#label-nup');
 let valid_NUP = false;

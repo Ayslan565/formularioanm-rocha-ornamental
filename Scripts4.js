@@ -1,5 +1,4 @@
-//index 4
-
+// Seleciona os campos e labels
 let diametro_furos = document.querySelector('#diametro_furos');
 let label_diametro_furos = document.querySelector('#label_diametro_furos');
 let valid_diametro_furos = false;
@@ -144,6 +143,28 @@ let planilha_04 = document.querySelector('#planilha_04');
 let label_planilha_04 = document.querySelector('#label_planilha_04');
 let valid_planilha_04 = false;
 
-let outra_forma_desmonte = document.querySelector('#outra_forma_desmonte');
-let label_outra_forma_desmonte = document.querySelector('#label_outra_forma_desmonte');
-let valid_outra_forma_desmonte = false;
+
+function salvar() {
+//Preenchimento Obrigatorio
+    let form = document.getElementById('formulario4');
+    let inputs = form.querySelectorAll('input[required], textarea[required]');
+    let todosPreenchidos = true;
+
+    inputs.forEach(function(input) {
+        if (!input.value.trim()) {
+            todosPreenchidos = false;
+            input.classList.add('is-invalid');
+        } else {
+            input.classList.remove('is-invalid');
+        }
+    });
+//Salvar e avancar 
+
+    if (todosPreenchidos) {
+        alert('Formulário salvo com sucesso! Avançando para a próxima página.');
+
+        window.location.href = 'proxima_pagina.html'; 
+    } else {
+        alert('Por favor, preencha todos os campos obrigatórios.');
+    }
+}

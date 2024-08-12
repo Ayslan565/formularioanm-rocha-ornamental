@@ -38,7 +38,7 @@ let labelPlanilha3 = document.querySelector('#label_planilha_3');
 let validPlanilha3 = false;
 
 function salvar() {
-    let form = document.getElementById('meu_formulario');
+    let form = document.getElementById('formulario');
     let inputs = form.querySelectorAll('input[required], textarea[required]');
     let todosPreenchidos = true;
 
@@ -50,7 +50,7 @@ function salvar() {
             input.classList.remove('is-invalid');
         }
     });
-    //Salvar
+    //Salvar e avancar
     if (todosPreenchidos) {
         
         alert('Formulário salvo com sucesso! Avançando para a próxima página.');
