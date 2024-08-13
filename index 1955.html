@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocha Ornamental e de Revestimento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvRqKHmCFCB7ljwOxdQuP9BkySSUf3uYngdg&s">
+    <script src="scripts1955.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="Imagens/Imagem_do_WhatsApp_de_2024-06-24_à_s__09.42.50_31c7da55-removebg-preview.png" id="img" width="200">
+        </div>
+        <div>
+            <h1 id="h1-header">Formulário de Rocha Ornamental</h1>
+        </div>
+    </header>
+    <section>
+            <div>
+                <h2>Identificação do Empreendimento:</h2>
+                <br>
+                <div class="leis">
+                    <p><b>Legislação Pertinente</b></p>
+                    <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del0227.htm">Inciso II, art.38, Código de Mineração</a>
+                </div>
+            </div>
+            <br>
+            <!--Formulário -->
+            <form id="formulario">
+                <div>
+                    <br><br>
+                    <label id="label-nup" for="nup">1. Escreva o <b>NUP</b> completo do processo </label>
+                    <p> </p>
+                    <input type="number" id="nup" class="form-control"  required>
+                </div>
+                <div>
+                    <br><br>
+                    <label id="label-nome-empresa">2. Nome da empresa</label>
+                    <p> </p>
+                    <input type="text" id="nome-empresa" class="form-control" required>        
+                </div>
+                <div>
+                    <br><br>
+                    <label id="label-nome-empresa">3. Classe da Empresa</label>
+                    <p> </p>
+                    <input type="text" id="nome-empresa" class="form-control"  required>        
+                </div>
+                <div>
+                    <br><br>
+                    <label id="label-nome-empresa">4. Munícipio(s)</label>
+                    <p> </p>
+                    <input type="text" id="nome-empresa" class="form-control" required>        
+                </div>
+                <div>
+                    <br><br>
+                    <label id="label-uf" for="uf">5. Insira a UF</label>
+                    <p> </p>
+                    <select class="form-select" id="uf" required>
+                        <option value="">--Selecione--</option>
+                        <option>AC</option>
+                        <option>AL</option>
+                        <option>AP</option>
+                        <option>AM</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>DF</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MA</option>
+                        <option>MT</option>
+                        <option>MS</option>
+                        <option>MG</option>
+                        <option>PA</option>
+                        <option>PB</option>
+                        <option>PR</option>
+                        <option>PE</option>
+                        <option>PI</option>
+                        <option>RJ</option>
+                        <option>RN</option>
+                        <option>RS</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                        <option>SC</option>
+                        <option>SP</option>
+                        <option>SE</option>
+                        <option>TO</option>
+                    </select>
+                </div>
+                <div>
+                    <br><br>
+                    <label id="label-localidade-coordenadas">6. Descreva a localidade com as devidas coordenadas de referência da Lavra utilizando como referência UTM ou Datum SIRGAS2000.</label>
+                    <p> </p>
+                    <input type="text" id="localidade-coordenadas" class="form-control" required>        
+                </div>
+                <div>
+                    <br><br>
+                    <label id="label-uso-substancia">7. Uso previsto para a substância.</label>
+                    <p> </p>
+                    <input type="text" id="uso-substancia" class="form-control" required>        
+                </div>
+                <div>
+                    <br><br>
+                    <label id="label-sub-aprov">8. Substância aprovada no Relatório Final de Pesquisa ou constante no processo oriundo de disponibilidade.</label>
+                    <p></p>
+                    <input class="form-check-input" type="radio" name="substancia-aprovada" id="sim-sub-aprovada" value="sim">
+                    <label id="label-sim-sub-aprovada" for="sim-sub-aprovada">Sim</label>
+                    <p></p>
+                    <input class="form-check-input" type="radio" name="substancia-aprovada" id="nao-sub-aprovada" value="nao">
+                    <label id="label-nao-sub-aprovada" for="nao-sub-aprovada">Não</label>
+                    <p></p>
+                </div>
+                <div>
+                    <br><br>
+                    <h2>Verificação da regularidade da poligonal do processo minerário (controle de áreas)</h2>
+                    <br>
+                </div>
+                    <div class="leis">
+                        <p><b>Legislação Pertinente</b></p>
+                        <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del0227.htm">Art.31, Código de Mineração</a>
+                    </div>
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label-uso-substancia">9 .Área aprovada no Relatório Final de Pesquisa</label>
+                    <p> </p>
+                    <input type="text" id="uso-substancia" class="form-control" required>        
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label-uso-substancia">9 .Área requerida para lavra</label>
+                    <p> </p>
+                    <input type="text" id="uso-substancia" class="form-control" required>        
+                </div>
+                
+                
+                <div>
+                    <br><br>
+                    <label id="label-uso-substancia">9 .Minuta de Portaria de Lavra</label>
+                    <p> </p>
+                    <input type="text" id="uso-substancia" class="form-control" required>        
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label-uso-substancia">9 .Verificação de atos de cessão / transferência de direitos minerários</label>
+                    <p> </p>
+                    <input type="text" id="uso-substancia" class="form-control" required>        
+                </div>
+
+                <div>
+                    <br><br>
+                    <h2>Verificação de possíveis irregularidades </h2>
+                    <br>
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label-uso-substancia">9 .Há alguma denúncia de lavra não autorizada ou ordem judicial pendente de atendimento que prejudique o curso do requerimento de lavra?</label>
+                    <p> </p>
+                    <input type="text" id="uso-substancia" class="form-control" required>        
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label-uso-substancia">9 Foi observada alguma imagem de satélite com indicativo de lavra não autorizada?</label>
+                    <p> </p>
+                    <input type="text" id="uso-substancia" class="form-control" required>        
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label-uso-substancia">9. Posteriormente houve algum parecer conclusivo do setor competente com a devida comunicação aos órgãos competentes (MPF/Orgão Ambiental/Procuradoria da União, etc.), que possibilite dar continuidade ao curso do requerimento de lavra?</label>
+                    <p> </p>
+                    <input type="text" id="uso-substancia" class="form-control" required>        
+                </div>
+
+
+
+                <div>
+                    <br><br>
+                    <label id="label-uso-substancia">9. Existe Guia de Utilização vigente? Foi apresentado o(s) RAL(s)? A produção declarada anualmente encontra-se dentro do limite autorizado na GU?</label>
+                    <p> </p>
+                    <input type="text" id="uso-substancia" class="form-control" required>        
+                </div>
+
+
+
+                <div>
+                    <br><br>
+                    <h2>Indicadores relativos às reservas e produção:</h2>
+                    <br><br><br>
+                    <H2>Relatório Final de Pesquisa e/ou Relatório de Pesquisa Complementar</H2>
+                    <div class="leis">
+                        <p><b>Legislação Pertinente</b></p>
+                        <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del0227.htm">Inciso I, art.32, Código de Mineração </a>BR><A HREF="#">Resolução 94/2022</a>
+                    </div>
+                </div>
+
+                <Div>
+                <label id="label_reserv_provada" for="reserv_provada">21. Reserva Provada</label>
+                <input id="reserv_provavel" type="text" class="form-control"required>        
+                </Div>
+
+                <div>
+                    <br><br>
+                    <label id="label_reserv_provavel" for="reserv_provavel">22. Reserva provável</label>
+                    <input id="reserv_provavel" type="text" class="form-control" required>        
+                </div>
+
+                <Div>
+                    <label id="label_reserv_provada" for="reserv_provada">21. Reserva remanescente provada </label>
+                    <input id="reserv_provavel" type="text" class="form-control"required>        
+                    </Div>
+    
+                    <div>
+                        <br><br>
+                        <label id="label_reserv_provavel" for="reserv_provavel">22.Reserva remanescente provada </label>
+                        <input id="reserv_provavel" type="text" class="form-control" required>        
+                    </div>
+
+                    <div>
+                        <br><br>
+                        <h2>Continuidade nos trabalhos de pesquisa mineral após aprovação do Relatório Final de Pesquisa</h2>
+                        <br>
+                    </div>
+                        <div class="leis">
+                            <p><b>Legislação Pertinente</b></p>
+                            <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del0227.htm">§ 7º, art.9, RCM</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <br><br>
+                        <label id="label-sub-aprov">8. Houve trabalhos de pesquisa mineral referente a novas substâncias minerais após a entrega do Relatório Final de Pesquisa?</label>
+                        <p></p>
+                        <input class="form-check-input" type="radio" name="substancia-aprovada" id="sim-sub-aprovada" value="sim">
+                        <label id="label-sim-sub-aprovada" for="sim-sub-aprovada">Sim</label>
+                        <p></p>
+                        <input class="form-check-input" type="radio" name="substancia-aprovada" id="nao-sub-aprovada" value="nao">
+                        <label id="label-nao-sub-aprovada" for="nao-sub-aprovada">Não</label>
+                        <p></p>
+                    </div>
+
+                    <div>
+                        <br><br>
+                        <h2>Características da produção</h2>
+                        <br>
+                    </div>
+
+                    <div>
+                        <br><br>
+                        <label id="label_reserv_provavel" for="reserv_provavel">Escala de produção média de minério (t/ano)</label>
+                        <input id="reserv_provavel" type="text" class="form-control" required>        
+                    </div>
+
+                    <div>
+                        <br><br>
+                        <label id="label-sub-aprov">8. Tipo de produto principal a ser gerado (qualidade exigida pelo mercado)</label>
+                        <p></p>
+                        <input class="form-check-input" type="radio" name="substancia-aprovada" id="sim-sub-aprovada" value="sim">
+                        <label id="label-sim-sub-aprovada" for="sim-sub-aprovada">Produto(s) bruto(s)</label>
+                        <p></p>
+                        <input class="form-check-input" type="radio" name="substancia-aprovada" id="nao-sub-aprovada" value="nao">
+                        <label id="label-nao-sub-aprovada" for="nao-sub-aprovada">Produto(s) beneficiado(s)</label>
+                        <p></p>
+                    </div>
+
+                     
+                        <div>
+                    <br><br>
+                    <label id="label-sub-aprov">8. Tipo de produto principal a ser gerado (qualidade exigida pelo mercado)</label>
+                    <p></p>
+                    <input class="form-check-input" type="radio" name="substancia-aprovada" id="sim-sub-aprovada" value="bruto">
+                    <label id="label-sim-sub-aprovada" for="sim-sub-aprovada">Produto(s) bruto(s)</label>
+                    <p></p>
+                    <input class="form-check-input" type="radio" name="substancia-aprovada" id="nao-sub-aprovada" value="beneficiado">
+                    <label id="label-nao-sub-aprovada" for="nao-sub-aprovada">Produto(s) beneficiado(s)</label>
+                    <p></p>
+                    </div>
+                        <div id="tabela-bruto" class="hidden">
+                    <h3>Produto(s) Bruto(s)</h3>
+                    <table>
+                    <tr>
+                    <th>Produto bruto</th>
+                    <th>Nome comercial do material</th>
+                    <th>Quantidade (m³/ano)</th>
+                    <th>Código da Nomenclatura Comum do Mercosul - NCM</th>
+                    </tr>
+                    <tr>
+                    <td>1ª Qualidade</td>
+                    <td><input type="text" name="bruto-1-qualidade-nome"></td>
+                    <td><input type="number" name="bruto-1-qualidade-quantidade"></td>
+                    <td><input type="text" name="bruto-1-qualidade-ncm"></td>
+                    </tr>
+                    <tr>
+                    <td>2ª Qualidade</td>
+                    <td><input type="text" name="bruto-2-qualidade-nome"></td>
+                    <td><input type="number" name="bruto-2-qualidade-quantidade"></td>
+                    <td><input type="text" name="bruto-2-qualidade-ncm"></td>
+                    </tr>
+                    <tr>
+                    <td>Comercial</td>
+                    <td><input type="text" name="bruto-comercial-nome"></td>
+                    <td><input type="number" name="bruto-comercial-quantidade"></td>
+                    <td><input type="text" name="bruto-comercial-ncm"></td>
+                    </tr>
+                    <tr>
+                    <td>Outros</td>
+                    <td><input type="text" name="bruto-outros-nome"></td>
+                    <td><input type="number" name="bruto-outros-quantidade"></td>
+                    <td><input type="text" name="bruto-outros-ncm"></td>
+                    </tr>
+                    </table>
+                    </div>
+                     
+                    <br><br>
+                        <div id="tabela-beneficiado" class="hidden">
+                    <h3>Produto(s) Beneficiado(s)</h3>
+                    <br>
+                    <table>
+                    <tr>
+                    <th>Produtos beneficiados</th>
+                    <th>Nome comercial do material</th>
+                    <th>Quantidade (m³/ano)</th>
+                    <th>Distribuição (%)</th>
+                    </tr>
+                    <tr>
+                    <td>Chapas polidas</td>
+                    <td><input type="text" name="beneficiado-chapas-polidas-nome"></td>
+                    <td><input type="number" name="beneficiado-chapas-polidas-quantidade"></td>
+                    <td><input type="number" name="beneficiado-chapas-polidas-distribuicao"></td>
+                    </tr>
+                    <tr>
+                    <td>Chapas não polidas</td>
+                    <td><input type="text" name="beneficiado-chapas-nao-polidas-nome"></td>
+                    <td><input type="number" name="beneficiado-chapas-nao-polidas-quantidade"></td>
+                    <td><input type="number" name="beneficiado-chapas-nao-polidas-distribuicao"></td>
+                    </tr>
+                    <tr>
+                    <td>Ladrilhos</td>
+                    <td><input type="text" name="beneficiado-ladrilhos-nome"></td>
+                    <td><input type="number" name="beneficiado-ladrilhos-quantidade"></td>
+                    <td><input type="number" name="beneficiado-ladrilhos-distribuicao"></td>
+                    </tr>
+                    <tr>
+                    <td>Outros</td>
+                    <td><input type="text" name="beneficiado-outros-nome"></td>
+                    <td><input type="number" name="beneficiado-outros-quantidade"></td>
+                    <td><input type="number" name="beneficiado-outros-distribuicao"></td>
+                    </tr>
+                    </table>
+                    </div>
+
+                <div class="text-center mt-4">
+                    <button type="button" class="btn btn-primary" onclick="salvar()">Salvar e Avançar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <img src="Imagens/Imagem_do_WhatsApp_de_2024-06-24_à_s__09.42.50_31c7da55-removebg-preview.png" width="200">
+        ©Todos os direitos Reservados - 2024
+    </footer>
+</body>
+</html>

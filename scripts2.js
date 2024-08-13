@@ -38,7 +38,7 @@ let labelPlanilha3 = document.querySelector('#label_planilha_3');
 let validPlanilha3 = false;
 
 function salvar() {
-    let form = document.getElementById('formulario');
+    let form = document.getElementById('formulario2');
     let inputs = form.querySelectorAll('input[required], textarea[required]');
     let todosPreenchidos = true;
 

@@ -1,5 +1,5 @@
 // Index 1
-let NUP = document.querySelector('#nup');
+let NUP = document.querySelector('#nup'); 45455454
 let labelNUP = document.querySelector('#label-nup');
 let valid_NUP = false;
 
@@ -19,7 +19,7 @@ let municipio = document.querySelector('#municipio');
 let valid_municipio = false;
 let label_municipio = document.querySelector('#label-municipio');
 
-let substancia = document.querySelector('#substancia');
+let substancia = document.querySelector('#substancia'); 
 let label_substancia = document.querySelector('#label-substancia');
 let valid_substancia = false;
 
