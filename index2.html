@@ -8,11 +8,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css"> 
     <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvRqKHmCFCB7ljwOxdQuP9BkySSUf3uYngdg&s">
+    <script src="scripts2.js"></script>
 </head>
 <body>
     <header>
         <div>
-            <img src="Imagens/Imagem_do_WhatsApp_de_2024-06-24_à_s__09.42.50_31c7da55-removebg-preview.png" id="img" width="200">
+            <img src="Imagens/Imagem_do_WhatsApp_de_2024-06-24_à_s__09.42.50_31c7da55-removebg-preview.png" id="img" width="200" alt="Imagem de Cabeçalho">
         </div>
         <div>
             <h1 id="h1-header">Formulário de Rocha Ornamental</h1>
@@ -20,356 +21,143 @@
     </header>
     <section>
         <div>
+            <!--Barra de  progresso -->
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 36%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">2 / 6</div>
+            </div>
+            <br><br>
 
-            <!--Subtítulo 1-->
+            <!-- Subtítulo 1 -->
             <div>
-                <h2>Dados de conversão dos recursos medidos ou indicativos em reservas provada e provável</h2>
+                <h2>Dados de conversão dos recursos medidos ou indicados em reservas provada e provável</h2>
                 <br>
             </div>
             <br>
 
-            <!--Barra de progresso-->
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">20%</div>
-            </div>
-
-            <form>
+            <form id="formulario2">
                 <div>
                     <br><br>
-                    <label>24. Reserva provada </label>
-                    <p> </p>
-                    <input type="TEXT" id="NE"class="form-control">        
-                </div>
-
-                <div>
+                    <p>Baixe a <b>Planilha</b> clicando no link abaixo:</p>
                     <br><br>
-                    <label>25. Reserva provável </label>
-                    <p> </p>
-                    <input type="TEXT" id="NE"class="form-control">        
-                </div>
-
-
-                <!--Subtítulo 2-->
-                <div>
-                    <br><br>
-                    <h2>Descrição das Frentes da lavra:</h2>
-                </div>
-
-                <div>
-                    <br><br>
-                    <p>Baixe o <b>formulário Nº1</b> clicando no Link abaixo:</p>
-                    <br><br>
-                    <a href="https://docs.google.com/spreadsheets/d/17t5eaYFO-DczsEiY9KeIxXtVnM86KSxs/edit?usp=sharing&ouid=101971901195272295278&rtpof=true&sd=true" class="download-link" download>Planilha de Preenchimento</a>
+                    <a href="https://docs.google.com/spreadsheets/d/146Nu4q-_1eyBsWPs24be5sONobD__3lq/edit?usp=sharing&ouid=101971901195272295278&rtpof=true&sd=true" download class="download-link">Planilha de Preenchimento</a>
                     <br><br><br>
-                    <label for="exampleFormControlFile1">39. Preencha e anexe o Formulário 01 </label>
-                    <h7 class="Importante"><br>Limite de número de arquivos: 1</h7>
-                    <h7 class="Importante"><br>Limite de tamanho de arquivo único: 100MB</h7>
-                    <h7 class="Importante"><br>Tipos de arquivo permitidos: Excel</h7>
-                    <p></p>
-                    <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">                  
+                    <label id="label_reserv_provada" for="reserv_provada">21. Reserva Provada</label>
+                    <br><br>
+                    <input id="reserv_provada" type="file" class="form-control" aria-describedby="inputGroupFileAddon04" aria-label="Upload" required>
+                    <h7 class="Importante textodesc">Limite de número de arquivos: 1</p>
+                    <h7 class="Importante textodesc">Limite de tamanho de arquivo único: 100MB</p>
+                    <h7 class="Importante textodesc">Tipos de arquivo permitidos: Excel</p>
+                </div>     
+                <div>
+                    <br><br>
+                    <label id="label_reserv_provavel" for="reserv_provavel">22. Reserva provável</label>
+                    <input id="reserv_provavel" type="text" class="form-control" placeholder="Digite a reserva provável" required>        
+                </div>
+
+                <!-- Subtítulo 2 -->
+                <div>
+                    <br><br>
+                    <h2>Descrição das Frentes da Lavra:</h2>
                 </div>
 
                 <div>
                     <br><br>
-                    <p>26. Tipo de produto principal a ser gerado.</p>
-                    <p>(qualidade exigida pelo mercado) </p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Produtos(s) Bruto(s)</label>
+                    <p>Baixe a <b>Planilha Nº1</b> clicando no link abaixo:</p>
+                    <br><br>
+                    <a href="https://docs.google.com/spreadsheets/d/17t5eaYFO-DczsEiY9KeIxXtVnM86KSxs/edit?usp=sharing&ouid=101971901195272295278&rtpof=true&sd=true" download class="download-link">Planilha de Preenchimento</a>
+                    <br><br><br>
+                    <label id="label_planilha_01" for="planilha_01">23. Preencha e anexe a <b>Planilha 01</b></label>
+                    <br><br>
+                    <input id="planilha_01" type="file" class="form-control" aria-describedby="inputGroupFileAddon04" aria-label="Upload" required>
+                    <h7 class="Importante textodesc">Limite de número de arquivos: 1</p>
+                    <h7 class="Importante textodesc">Limite de tamanho de arquivo único: 100MB</p>
+                    <h7 class="Importante textodesc">Tipos de arquivo permitidos: Excel</p>
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label_tipo_produto_principal" for="prod_bruto">24. Tipo de produto principal a ser gerado.</label>
+                    <p>(qualidade exigida pelo mercado)</p>
+                    <input class="form-check-input" type="radio" name="prod_tipo" id="prod_bruto" value="bruto" required>
+                    <label class="form-check-label" for="prod_bruto">Produto(s) Bruto(s)</label>
                     <p></p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Produto(s) beneficiado(s)</label>
+                    <input class="form-check-input" type="radio" name="prod_tipo" id="prod_beneficiado" value="beneficiado" required>
+                    <label class="form-check-label" for="prod_beneficiado">Produto(s) Beneficiado(s)</label>
                 </div>
 
                 <div>
                     <br><br><br>
                     <h4>Tipo de Produto Bruto</h4>
                     <br><br>
-                    <p>Baixe o <b>formulário Nº2.1</b> clicando no Link abaixo:</p>
+                    <p>Baixe a <b>Planilha Nº2.1</b> clicando no link abaixo:</p>
                     <br><br>
-                    <a href="https://docs.google.com/spreadsheets/d/18oSHxpxzLiaGD050FrZIIZ5oTx_EMU2S/edit?usp=sharing&ouid=101971901195272295278&rtpof=true&sd=true" download class="download-link" >Planilha de Preenchimento</a>
+                    <a href="https://docs.google.com/spreadsheets/d/18oSHxpxzLiaGD050FrZIIZ5oTx_EMU2S/edit?usp=sharing&ouid=101971901195272295278&rtpof=true&sd=true" download class="download-link">Planilha de Preenchimento</a>
                     <br><br><br>
-                    <label for="exampleFormControlFile1">41. Preencha e anexe o Formulário 2.1 </label>
-                    <h7 class="Importante"><br>Limite de número de arquivos: 1</h7>
-                    <h7 class="Importante"><br>Limite de tamanho de arquivo único: 100MB</h7>
-                    <h7 class="Importante"><br>Tipos de arquivo permitidos: Excel</h7>
+                    <label id="label_planilha_2_1" for="planilha_2_1">25. Preencha e anexe a <b>Planilha 2.1</b></label>
+                    <br><br>
+                    <input id="planilha_2_1" type="file" class="form-control" aria-describedby="inputGroupFileAddon04" aria-label="Upload" required>
+                    <h7 class="Importante textodesc">Limite de número de arquivos: 1</p>
+                    <h7 class="Importante textodesc">Limite de tamanho de arquivo único: 100MB</p>
+                    <h7 class="Importante textodesc">Tipos de arquivo permitidos: Excel</p>
                     <p></p>
-                    <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
                 </div>
 
                 <div>
                     <br><br><br>
                     <h4>Tipo de Produto Beneficiado</h4>
                     <br><br>
-                    
-                    <p>Baixe o <b>formulário Nº2.2</b> clicando no Link abaixo:</p>
+                    <p>Baixe a <b>Planilha Nº2.2</b> clicando no link abaixo:</p>
                     <br><br>
-                    <a href="https://docs.google.com/spreadsheets/d/19pTgEUGtBUK2x1rI4TmHkQifwKHeYccG/edit?usp=sharing&ouid=101971901195272295278&rtpof=true&sd=true" download class="download-link" >Planilha de Preenchimento</a>
-                    <br> <br> <br>
-
-                    <label for="exampleFormControlFile1">42. Preencha e anexe o Formulário 2.2 </label>
-                    <h7 class="Importante"><br>Limite de número de arquivos: 1</h7>
-                    <h7 class="Importante"><br>Limite de tamanho de arquivo único: 100MB</h7>
-                    <h7 class="Importante"><br>Tipos de arquivo permitidos: Word, Excel, PPT, PDF, Imagem, Vídeo, Áudio</h7>
-                    <p></p>
-                    <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-                </div>
-
-                <div>
-                    <br><br>
-                    <p>27. Tipo(s) de produto(s) secundário(s) a ser gerado</p>
-                    <p>Haverá etapa de beneficiamento </p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Sim</label>
-                    <p></p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Não</label>
-                </div>
-
-                <div>
-                    <br><br>
-                    <label for="exampleFormControlFile1">28. Preencha e anexe o Formulário 2.3 </label>
+                    <a href="https://docs.google.com/spreadsheets/d/19pTgEUGtBUK2x1rI4TmHkQifwKHeYccG/edit?usp=sharing&ouid=101971901195272295278&rtpof=true&sd=true" download class="download-link">Planilha de Preenchimento</a>
                     <br><br><br>
-                    <a href="https://docs.google.com/spreadsheets/d/1SrWmmqTDogzbELuuFcr4mGgZ9gKgzil6/edit?usp=sharing&ouid=101971901195272295278&rtpof=true&sd=true" download class="download-link" >Planilha de Preenchimento</a>
-                    <br> <br> <br>
-                    <h7 class="Importante"><br>Limite de número de arquivos: 1</h7>
-                    <h7 class="Importante"><br>Limite de tamanho de arquivo único: 100MB</h7>
-                    <h7 class="Importante"><br>Tipos de arquivo permitidos: Word, Excel, PPT, PDF, Imagem, Vídeo, Áudio</h7>
+                    <label id="label_planilha_2_2" for="planilha_2_2">26. Preencha e anexe a <b>Planilha 2.2</b></label>
+                    <br><br>
+                    <input id="planilha_2_2" type="file" class="form-control" aria-describedby="inputGroupFileAddon04" aria-label="Upload" required>
+                    <h7 class="Importante textodesc">Limite de número de arquivos: 1</p>
+                    <h7 class="Importante textodesc">Limite de tamanho de arquivo único: 100MB</p>
+                    <h7 class="Importante textodesc">Tipos de arquivo permitidos: Word, Excel, PPT, PDF, Imagem, Vídeo, Áudio</p>
                     <p></p>
-                    <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
                 </div>
 
-                <!--Subtítulo 3-->
-                <div>
-                    <br><br>
-                    <h2>Projeção de Escala de Produção</h2>
-                </div>
-
-                <div>
-                    <br>
-                    
-                    <label for="exampleFormControlFile1">45. Preencha e anexe o Formulário 03 </label>
-                    <br><br><br>
-                    <a href="https://docs.google.com/spreadsheets/d/1HCwiR7J9QHXZSqc8gjMehrQ3B9-0ZP_A/edit?usp=sharing&ouid=101971901195272295278&rtpof=true&sd=true" download class="download-link" >Planilha de Preenchimento</a>
-                    <br> <br> <br>
-                    <h7 class="Importante"><br>Limite de número de arquivos: 1</h7>
-                    <h7 class="Importante"><br>Limite de tamanho de arquivo único: 100MB</h7>
-                    <h7 class="Importante"><br>Tipos de arquivo permitidos: Excel</h7>
-                    <p></p>
-                    <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">                  
-                </div>
-
-                <div>
-                    <br><br>
-                    <p>29. Existe potencial aproveitamento de material estéril ? </p>
-                    <p class="Importante"> legislação pertinente</p>
-                    <a href="https://anmlegis.datalegis.net/action/TematicaAction.php?acao=abrirVinculos&cotematica=13596156&cod_menu=6783&cod_modulo=405">Inciso VI, art.38, Código de Mineração.</a>
-                    <a href="https://anmlegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RES&numeroAto=00000085&seqAto=000&valorAno=2021&orgao=DC/ANM/MME&cod_modulo=351&cod_menu=6675"><br>Res. 85/2021.</a>
-                    <a href="https://anmlegis.datalegis.net/action/TematicaAction.php?acao=abrirVinculos&cotematica=13596156&cod_menu=6783&cod_modulo=405"><br>Art.39, Código de Mineração, II, a.</a>
-                    <a href="https://anmlegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RES&numeroAto=00000085&seqAto=000&valorAno=2021&orgao=DC/ANM/MME&cod_modulo=351&cod_menu=6675"><br>§ 7º, art.9, RCM.</a>
-                    <br><br>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Sim</label>
-                    <p></p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Não</label>
-                </div>
-
-                <div>
-                    <br><br>
-                    <label>30. Informar a previsão de produção e quais características do material. </label>
-                    <p> </p>
-                    <input type="TEXT" id="NE"class="form-control">        
-                </div>
-
-                <!--Subtítulo 4-->
                 <div>
                     <br><br><br>
-                    <h2>Vida útil</h2>
-                    <br>
-                    <p>legislação pertinente</p>
-                    <a href="https://anmlegis.datalegis.net/action/TematicaAction.php?acao=abrirVinculos&cotematica=13596156&cod_menu=6783&cod_modulo=405">Art.39, Código de Mineração., II, a</a>
+                    <label id="label_tips_produt_sec_gerado" for="tips_produt_sec_gerado">27. Tipo de produtos secundários a serem gerados</label>
+                    <p>(qualidade exigida pelo mercado)</p>
+                    <textarea class="form-control" id="tips_produt_sec_gerado" rows="3" placeholder="Descreva os produtos secundários" required></textarea>
                 </div>
-                <br>
+                <br><br>
+                <label id="label_observacao" for="observacao">28. Observação</label>
+                <textarea class="form-control" id="observacao" rows="3" placeholder="Digite suas observações" required></textarea>
 
                 <div>
-                    <br>
-                    <label>31. Vida últil da Jazida </label>
-                    <div>
-                    <input type="number" id="NUP" class="form-control">
-                </div>
-
-                <div>
+                    <br><br><br>
+                    <p>Baixe a <b>Planilha Nº3</b> clicando no link abaixo:</p>
                     <br><br>
-                    <p>32. Informar a modalidade de lavra</p>
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="opcao1">
-                    <label class="form-check-label" for="inlineRadio1">Céu Aberto</label>
-                    <br>
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="opcao2">
-                    <label class="form-check-label" for="inlineRadio2">Mista</label>
-                    <br>
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="opcao2">
-                    <label class="form-check-label" for="inlineRadio2">Subterrânea</label>
-                    <br>
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="opcao2">
-                    <label class="form-check-label" for="inlineRadio2">Outra</label>
-                </div>
-
-                <!--Subtítulo 5-->
-                <div>
+                    <a href="https://docs.google.com/spreadsheets/d/1FUlaRhVxEbJ8VbxGWnA8chHLNjlwN3Sy/edit?usp=sharing&ouid=101971901195272295278&rtpof=true&sd=true" download class="download-link">Planilha de Preenchimento</a>
                     <br><br><br>
-                    <h2>Projeto ou ante-projeto referente ao Plano de Lavra a ser adotado</h2>
-                </div>
-
-                <div>
-                    <br>
-                    <p>33. Selecione uma das opções </p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Em bancadas</label>
-                    <p></p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Em marcações sem bancadas</label>
-                </div>
-
-                <!--Subtítulo 6-->
-                <div>
-                    <br><br><br>
-                    <h2>Em marcações sem bancadas</h2>
-                    <br>
-                    <p>legislação pertinente</p>
-                    <a href="https://www.jusbrasil.com.br/topicos/10592247/artigo-38-do-decreto-lei-n-227-de-28-de-fevereiro-de-1967">Inciso VI, art.38, Código de Mineração. e Alínea "c", Inciso II</a>
-                    <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del0227.htm"><br>Art.39, Código de Mineração</a>
-                    <a href="https://anmlegis.datalegis.net/action/UrlPublicasAction.php?acao=abrirAtoPublico&num_ato=00000068&sgl_tipo=RES&sgl_orgao=ANM/MME&vlr_ano=2021&seq_ato=000&cod_tipo=&des_item=&des_item_fim=&num_linha="><br>Art.32, RCM</a>
-                </div>
-
-                <div>
-                    <br>
-                    <p>34. Selecione a Modalidade de Lavra </p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Lavra para produção de lajões (ardósias, quartzitos e outros)</label>
-                    <p></p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Lavra para produção de blocos brutos ou esquadrejados</label>
-                    <p></p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Lavra para pedra de talhe/cantaria</label>
-                    <p></p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Lavra de material capeado</label>
-                </div>
-
-                <!--Subtítulo 7-->
-                <div>
-                    <br><br><br>
-                    <h2>Dimensão da prancha de lavra e número de blocos</h2>
-                    <br>
-                </div>
-
-                <div>
-                    <br>
-                    <label>35. Comprimento da prancha (m) </label>
-                    <P></P> 
-                    <div>
-                    <input type="number" id="NUP" class="form-control">
-                </div>
-
-                <div>
-                    <br>
-                    <label>36. Altura da prancha (m) </label>
-                    <p></p>
-                    <div>
-                    <input type="number" id="NUP" class="form-control">
-                </div>
-
-                <div>
-                    <br>
-                    <label>37. Espessura da prancha (m): </label>
-                    <p ></p>
-                    <div>
-                    <input type="number" id="NUP" class="form-control">
-                </div>
-
-                <div>
-                    <br>
-                    <label>38. Volume por prancha (m³) </label>
-                    <p></p>
-                    <div>
-                    <input type="number" id="NUP" class="form-control">
-                </div>
-
-                <div>
-                    <br>
-                    <label>39. Quantidade de prancha desmontada por mês </label>
-                    <div>
-                    <input type="number" id="NUP" class="form-control">
-                </div>
-
-                <div>
-                    <br>
-                    <label>40. Volume total liquído por mês: </label>
-                    <div>
-                    <input type="number" id="NUP" class="form-control">
-                </div>
-
-                <div>
-                    <br>
-                    <label>41. Volume médio de um bloco (m³): </label>
-                    <div>
-                    <input type="number" id="NUP" class="form-control">
-                </div>
-
-                <div>
-                    <br>
-                    <label>42. Nº Blocos estimado por mês: </label>
-                    <div>
-                    <input type="number" id="NUP" class="form-control">
-                </div>
-
-                <div>
-                    <br>
-                    <label>43. Densidade in-situ da rocha (t/mk³): </label>
-                    <div>
-                    <input type="number" id="NUP" class="form-control">
-                </div>
-
-                <div>
-                    <br>
-                    <label>44. Densidade in-situ da rocha (t/mk³): </label>
-                    <p></p>
-                    <p class="Importante">Múltiplique o volume médio de um bloco (m³), com Nº de blocos estimados por mês com a densidade in-situ da rocha (t/mk³).</p>
-                    <div>
-                    <input type="number" id="NUP" class="form-control">
-                </div>
-
-                <div>
+                    <label id="label_planilha_3" for="planilha_3">29. Preencha e anexe a <b>Planilha 3</b></label>
                     <br><br>
-                    <p>45. Selecione a forma secundária das bancadas </p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Lavra para pedra de talhe/cantaria</label>
+                    <input id="planilha_3" type="file" class="form-control" aria-describedby="inputGroupFileAddon04" aria-label="Upload" required>
+
+                    <h7 class="Importante textodesc">Limite de número de arquivos: 1</p>
+                    <h7 class="Importante textodesc">Limite de tamanho de arquivo único: 100MB</p>
+                    <h7 class="Importante textodesc">Tipos de arquivo permitidos: Excel</p>
                     <p></p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Lavra de material capeado</label>
-                    <p></p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Lavra para produção de lajões (ardósias, quartzitos e outros)</label>
-                    <p></p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Não Possui</label>
+                </div>
+                <br><br>
+
+                <div class="text-center mt-4">
+                    <button type="button" class="btn btn-primary" onclick="salvar()">Salvar e Avançar</button>
                 </div>
             </form>
-        </div>
-
-        <br>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button class="btn btn-primary me-md-2" type="button">Enviar e Avançar</button>
         </div>
 
         <div>
             <br><br><br>
             <nav aria-label="Page navigation example">
                 <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="index.html">Pag. Anterior</a></li>
                     <li class="page-item"><a class="page-link" href="index.html">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item active"><a class="page-link" href="index2.html">2</a></li>
                     <li class="page-item"><a class="page-link" href="index3.html">3</a></li>
                     <li class="page-item"><a class="page-link" href="index4.html">4</a></li>
                     <li class="page-item"><a class="page-link" href="index5.html">5</a></li>
@@ -377,13 +165,15 @@
                     <li class="page-item"><a class="page-link" href="index3.html">Pag. Seguinte</a></li>
                 </ul>
             </nav>
+            
         </div>
     </section>
 
-    <!--Rodapé-->
+    <!-- Rodapé -->
     <footer>
-        <img src="Imagens/Imagem_do_WhatsApp_de_2024-06-24_à_s__09.42.50_31c7da55-removebg-preview.png" width="200">
-        ©Todos os direitos Reservados - 2024
+        <img src="Imagens/Imagem_do_WhatsApp_de_2024-06-24_à_s__09.42.50_31c7da55-removebg-preview.png" width="200" alt="Imagem do Rodapé">
+        © Todos os direitos Reservados - 2024
     </footer>
+
 </body>
 </html>

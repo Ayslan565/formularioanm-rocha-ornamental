@@ -7,7 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css"> 
-    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvRqKHmCFCB7ljwOxdQuP9BkySSUf3uYngdg&s"></head>
+    <script src="Scripts4.js"></script>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvRqKHmCFCB7ljwOxdQuP9BkySSUf3uYngdg&s">
+</head>
 <body>
     <header>
         <div>
@@ -20,392 +22,238 @@
     <section>
         <div>
 
-            <!--Subtítulo 1-->
-            <div>
-                <h2>Perfuração ou Corte</h2>
-                <p>Favor consultar as Leis na qual está pergunta se enquadra.</p>
-                <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del0227.htm">Alínea "a", inciso II, art.39, Código de Mineração.</a>
+            <!--Barra de progresso-->
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 72%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">4 / 6 </div>
             </div>
             <br><br>
 
-            <!--Barra de progresso-->
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">60%</div>
+            <!--Subtítulo 1-->
+            <div>
+                <h2>Perfuração ou Corte</h2>
+                <br>
+                <div class="leis">
+                    <p><b>Legislação Pertinente</b></p>
+                    <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del0227.htm">Alínea "a", inciso II, art.39, Código de Mineração.</a>
+                </div>
             </div>
+            <br><br>
 
-            <form>
+            <form id="formulario4">
                 <div>
                     <br><br>
-                    <label for="NUP">65. Diâmetro dos furos para desmembramento dos blocos (mm):</label>
-                    <p> </p>
-                    <input type="number" id="NUP" class="form-control">
+                    <label for="diametroFuros" id="label_diametroFuros">49. Diâmetro dos furos para desmembramento dos blocos (mm):</label>
+                    <input type="number" id="diametroFuros" class="form-control" placeholder="Digite o diâmetro dos furos em mm" required>
                 </div>
 
                 <div>
                     <br><br>
-                    <label for="NUP">66. Afastamento dos furos (m):</label>
-                    <p> </p>
-                    <input type="number" id="NUP" class="form-control">
+                    <label for="afastamentoFuros" id="label_afastamentoFuros">50. Afastamento dos furos (m):</label>
+                    <input type="number" id="afastamentoFuros" class="form-control" placeholder="Digite o afastamento dos furos em metros" required>
                 </div>
 
                 <div>
                     <br><br>
-                    <label for="NUP">67. Espaçamento dos furos (m):</label>
-                    <p> </p>
-                    <input type="number" id="NUP" class="form-control">
+                    <label for="espacoFuros" id="label_espacoFuros">51. Espaçamento dos furos (m):</label>
+                    <input type="number" id="espacoFuros" class="form-control" placeholder="Digite o espaçamento dos furos em metros" required>
                 </div>
 
                 <div>
                     <br><br>
-                    <label for="NUP">68. Profundidade média dos furos (m):</label>
-                    <p> </p>
-                    <input type="number" id="NUP" class="form-control">
+                    <label for="profundidadeFuros" id="label_profundidadeFuros">52. Profundidade média dos furos (m):</label>
+                    <input type="number" id="profundidadeFuros" class="form-control" placeholder="Digite a profundidade média dos furos em metros" required>
                 </div>
 
                 <div>
                     <br><br>
-                    <label for="NUP">69. Número médio de furos:</label>
-                    <p> </p>
-                    <input type="number" id="NUP" class="form-control">
+                    <label for="numeroFuros" id="label_numeroFuros">53. Número médio de furos:</label>
+                    <input type="number" id="numeroFuros" class="form-control" placeholder="Digite o número médio de furos" required>
                 </div>
-
 
                 <!--Subtítulo 2-->
                 <div>
                     <br><br><br>
                     <h2>Equipamentos empregados na perfuração e/ou corte</h2>
-                    <p>Tipo de equipamento</p>
+                    <br><br>
+                    <h3>Tipos de equipamentos</h3>
+                </div>
+
+                <div>
+                    <br>
+                    <label for="marteletePneumatico" id="label_marteletePneumatico">54. Martelete pneumático:</label>
+                    <input type="text" id="marteletePneumatico" class="form-control" placeholder="Digite o nome do martelete pneumático" required>        
                 </div>
 
                 <div>
                     <br><br>
-                    <label>70. Marte lete pneumático</label>
-                    <p> </p>
-                    <input type="TEXT" id="NE"class="form-control">        
+                    <label for="perfuratrizFundo" id="label_perfuratrizFundo">55. Perfuratriz de fundo e furo:</label>
+                    <input type="text" id="perfuratrizFundo" class="form-control" placeholder="Digite o nome da perfuratriz de fundo e furo" required>        
                 </div>
 
                 <div>
                     <br><br>
-                    <label>71. Peruratriz de fundo e furo</label>
-                    <p> </p>
-                    <input type="TEXT" id="NE"class="form-control">        
+                    <label for="banqueadora" id="label_banqueadora">56. Banqueadora:</label>
+                    <input type="text" id="banqueadora" class="form-control" placeholder="Digite o nome da banqueadora" required>        
                 </div>
 
                 <div>
                     <br><br>
-                    <label>72. Banqueadora</label>
-                    <p> </p>
-                    <input type="TEXT" id="NE"class="form-control">        
+                    <label for="compressorPortatil" id="label_compressorPortatil">57. Compressor portátil:</label>
+                    <input type="text" id="compressorPortatil" class="form-control" placeholder="Digite o nome do compressor portátil" required>        
                 </div>
 
                 <div>
                     <br><br>
-                    <label>73. Compressor portátil</label>
-                    <p> </p>
-                    <input type="TEXT" id="NE"class="form-control">        
+                    <label for="compressorEstacionario" id="label_compressorEstacionario">58. Compressor estacionário:</label>
+                    <input type="text" id="compressorEstacionario" class="form-control" placeholder="Digite o nome do compressor estacionário" required>        
                 </div>
 
                 <div>
                     <br><br>
-                    <label>74. Compressor estacionário</label>
-                    <p> </p>
-                    <input type="TEXT" id="NE"class="form-control">        
+                    <label for="maquinaFioDiamantado" id="label_maquinaFioDiamantado">59. Maquina de fio diamantado:</label>
+                    <input type="text" id="maquinaFioDiamantado" class="form-control" placeholder="Digite o nome da máquina de fio diamantado" required>        
                 </div>
 
                 <div>
                     <br><br>
-                    <label>75. Maquina de fio diamantado</label>
-                    <p> </p>
-                    <input type="TEXT" id="NE"class="form-control">        
+                    <label for="esquadrejadora" id="label_esquadrejadora">60. Esquadrejadora:</label>
+                    <input type="text" id="esquadrejadora" class="form-control" placeholder="Digite o nome da esquadrejadora" required>        
                 </div>
 
                 <div>
                     <br><br>
-                    <label>76. Esquadrejadora</label>
-                    <p> </p>
-                    <input type="TEXT" id="NE"class="form-control">        
+                    <label for="perfuratrizHidraulica" id="label_perfuratrizHidraulica">61. Perfuratriz Hidráulica:</label>
+                    <input type="text" id="perfuratrizHidraulica" class="form-control" placeholder="Digite o nome da perfuratriz hidráulica" required>        
                 </div>
 
                 <div>
                     <br><br>
-                    <label>77. Perfuratriz Hidráulica</label>
-                    <p> </p>
-                    <input type="TEXT" id="NE"class="form-control">        
+                    <label for="cortadeiraDiamantado" id="label_cortadeiraDiamantado">62. Cortadeira de disco diamantado:</label>
+                    <input type="text" id="cortadeiraDiamantado" class="form-control" placeholder="Digite o nome da cortadeira de disco diamantado" required>        
                 </div>
 
                 <div>
                     <br><br>
-                    <label>78. Cortadeira de disc diamantado</label>
-                    <p> </p>
-                    <input type="TEXT" id="NE"class="form-control">        
+                    <label for="outrosEquipamentos" id="label_outrosEquipamentos">63. Outros:</label>
+                    <input type="text" id="outrosEquipamentos" class="form-control" placeholder="Digite outros equipamentos" required>        
                 </div>
 
                 <div>
                     <br><br>
-                    <label>79. Outros</label>
-                    <p> </p>
-                    <input type="TEXT" id="NE"class="form-control">        
-                </div>
-
-                <div>
-                    <br><br>
-                    <p>80. Seleione uma das opções</p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Desmonte Primário</label>
-                    <p></p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Desmonte Secundário</label>
+                    <p id="label_64">64. Selecione uma das opções:</p>
+                    <input class="form-check-input" type="radio" name="tipoDesmonte" id="desmontePrimario" value="primario" required>
+                    <label class="form-check-label" for="desmontePrimario">Desmonte Primário</label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="tipoDesmonte" id="desmonteSecundario" value="secundario" required>
+                    <label class="form-check-label" for="desmonteSecundario">Desmonte Secundário</label>
                 </div>
 
                 <!--Subtítulo 3-->
                 <div>
                     <br><br>
                     <h2>Desmonte Primário</h2>
-                    <p>Tipo de tecnologia a ser empregada no desmonte Primário</p>
                 </div>
 
                 <div>
                     <br>
                     <ul class="list-unstyled">
-                        <li>81. Tipo de tecnologia a ser empregada no desmonte Primário:</li>
+                        <li style="font-size: 125%;" id="label_65">65. Tipo de tecnologia a ser empregada no desmonte Primário:</li >
+                        
                             <ul>
                                 <br>
                                 <li>Perfuração descontínua + explosivos</li>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Sim</label>
+                                <input class="form-check-input" type="radio" name="tecnologiaDesmontePrimario" id="tecnologiaExplosivosSim" value="sim" required>
+                                <label class="form-check-label" for="tecnologiaExplosivosSim" id="label_tecnologiaExplosivosSim">Sim</label>
                                 <br>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Não</label>
-                                <p></p>
+                                <input class="form-check-input" type="radio" name="tecnologiaDesmontePrimario" id="tecnologiaExplosivosNao" value="nao" required>
+                                <label class="form-check-label" for="tecnologiaExplosivosNao" id="label_tecnologiaExplosivosNao">Não</label>
+                                <br><br>
+                                <li>Perfuração contínua + abrasivo</li>
+                                <input class="form-check-input" type="radio" name="tecnologiaDesmontePrimario" id="tecnologiaAbrasivoSim" value="sim" required>
+                                <label class="form-check-label" for="tecnologiaAbrasivoSim" id="label_tecnologiaAbrasivoSim">Sim</label>
                                 <br>
-                                
-                                <li>Perfuração Descontínua + massa expansiva</li>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Sim</label>
-                                <br>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Não</label>
-                                <p> </p>
-                                <br>
-
-                                <li>Perfuração descontínua + cunha</li>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Sim</label>
-                                <br>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Não</label>
-                                <p> </p>
-                                <br>
-
-                                <li>Perfuração contínua</li>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Sim</label>
-                                <br>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Não</label>
-                                <p> </p>
-                                <br>
-
-                                <li>Corte com fio helicoidal</li>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Sim</label>
-                                <br>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Não</label>
-                                <p> </p>
-                                <br>
-
-                                <li>Corte com fio diamantado</li>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Sim</label>
-                                <br>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Não</label>
-                                <p> </p>
-                                <br>
-
-                                <li>Corte com water-jet</li>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Sim</label>
-                                <br>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Não</label>
-                                <p> </p>
-                                <br>
-
-                                <li>Corte com corrente diamantada</li>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Sim</label>
-                                <br>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Não</label>
-                                <p> </p>
-                                <br>
-
-                                <li>Corte a disco diamantado</li>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Sim</label>
-                                <br>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Não</label>
-                                <p> </p>
-                                <br>
+                                <input class="form-check-input" type="radio" name="tecnologiaDesmontePrimario" id="tecnologiaAbrasivoNao" value="nao" required>
+                                <label class="form-check-label" for="tecnologiaAbrasivoNao" id="label_tecnologiaAbrasivoNao">Não</label>
+                                <br><br>
                             </ul>
-                        </li>
                     </ul>
                 </div>
 
-                <div>
-                    <label>82. Caixa de texto</label>
-                    <p> </p>
-                    <input type="TEXT" id="NE"class="form-control">        
-                </div>
-
-                <div>
-                    <br>
-                    <p>83. Haverá Desmonte Secundário?</p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Sim</label>
-                    <p></p>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                    <label class="form-check-label" for="exampleRadios1">Não</label>
-                </div>
-
-
                 <!--Subtítulo 4-->
                 <div>
-                    <br><br><br>
-                    <h2>Desmonte Secundáro</h2>
+                    <br><br>
+                    <h2>Desmonte Secundário</h2>                    
                 </div>
 
                 <div>
                     <br>
                     <ul class="list-unstyled">
-                        <li>81. Tipo de tecnologia a ser empregada no desmonte Primário:</li>
+                        <li id="label_66">66. Tipo de tecnologia a ser empregada no desmonte Secundário:</li>
                             <ul>
                                 <br>
-                                <li>Esfera de aço (Droppball)</li>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Sim</label>
+                                <li>Perfuração descontínua + explosivos</li>
+                                <input class="form-check-input" type="radio" name="tecnologiaDesmonteSecundario" id="tecnologiaExplosivosSim" value="sim" required>
+                                <label class="form-check-label" for="tecnologiaExplosivosSim" id="label_tecnologiaExplosivosSim">Sim</label>
                                 <br>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Não</label>
-                                <p></p>
+                                <input class="form-check-input" type="radio" name="tecnologiaDesmonteSecundario" id="tecnologiaExplosivosNao" value="nao" required>
+                                <label class="form-check-label" for="tecnologiaExplosivosNao" id="label_tecnologiaExplosivosNao">Não</label>
+                                <br><br>
+                                <li>Perfuração contínua + abrasivo</li>
+                                <input class="form-check-input" type="radio" name="tecnologiaDesmonteSecundario" id="tecnologiaAbrasivoSim" value="sim" required>
+                                <label class="form-check-label" for="tecnologiaAbrasivoSim" id="label_tecnologiaAbrasivoSim">Sim</label>
                                 <br>
-                                
-                                <li>Rombedor Hidráulico</li>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Sim</label>
-                                <br>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Não</label>
-                                <p> </p>
-                                <br>
-
-                                <li>Explosivo</li>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Sim</label>
-                                <br>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Não</label>
-                                <p> </p>
-                                <br>
-
-                                <li>Massa Expansiva</li>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Sim</label>
-                                <br>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                <label class="form-check-label" for="exampleRadios1">Não</label>
-                                <p> </p>
-                                <br>
-
+                                <input class="form-check-input" type="radio" name="tecnologiaDesmonteSecundario" id="tecnologiaAbrasivoNao" value="nao" required>
+                                <label class="form-check-label" for="tecnologiaAbrasivoNao" id="label_tecnologiaAbrasivoNao">Não</label>
+                                <br><br>
                             </ul>
-                        </li>
                     </ul>
                 </div>
 
+                <div>
+                    <br><br>
+                    <label for="outrosEquipamentosSecundario" id="label_outrosEquipamentosSecundario">67. Outros:</label>
+                    <input type="text" id="outrosEquipamentosSecundario" class="form-control" placeholder="Digite outros equipamentos secundários" required>
+                </div>
 
-                <!--Subtítulo 5-->
-            <div>
-                <br>
-                <h2>Tipo e Desmonte</h2>
-                <p>Favor consultar as Leis na qual está pergunta se enquadra.</p>
-                <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del0227.htm">Alínea "a", inciso II, art.39, Código de Mineração.</a>
-            </div>
+                <div>
+                    <br><br>
+                    <label for="revestimentoBlocos" id="label_revestimentoBlocos">68. Revestimento dos blocos:</label>
+                    <input type="text" id="revestimentoBlocos" class="form-control" placeholder="Digite o tipo de revestimento dos blocos" required>
+                </div>
 
-            <div>
-                <br><br>
-                <p>82. Haverá Outra forma na execução</p>
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                <label class="form-check-label" for="exampleRadios1">Explosivos</label>
-                <p></p>
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                <label class="form-check-label" for="exampleRadios1">Massa Expansiva</label>
-                <p></p>
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                <label class="form-check-label" for="exampleRadios1">Mecânico</label>
-            </div>
+                <div>
+                    <br><br>
+                    <label for="durabilidadeBlocos" id="label_durabilidadeBlocos">69. Durabilidade dos blocos:</label>
+                    <input type="text" id="durabilidadeBlocos" class="form-control" placeholder="Digite a durabilidade dos blocos" required>
+                </div>
 
-            <div>
-                <br><br>
-                <p>Baixe o <b>formulário Nº 04</b> clicando no Link abaixo:</p>
-                <br><br>
-                <a href="https://docs.google.com/spreadsheets/d/1UkNP1iotxKD97ZCn6cagrL9aNuaW2khU/edit?usp=sharing&ouid=101971901195272295278&rtpof=true&sd=true" download class="download-link" >Planilha de Preenchimento</a>
-                <br> <br> <br>
-                <label for="exampleFormControlFile1">83. Preencha e anexe o Formulário 04</label>
-                <h7 class="Importante"><br>Limite de número de arquivos: 1</h7>
-                <h7 class="Importante"><br>Limite de tamanho de arquivo único: 100MB</h7>
-                <h7 class="Importante"><br>Tipos de arquivo permitidos: Excel</h7>
-                <p></p>
-                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">                  
-            </div>
+                <div>
+                    <br><br>
+                    <label for="observacoes" id="label_observacoes">70. Observações adicionais:</label>
+                    <textarea id="observacoes" class="form-control" rows="4" placeholder="Digite observações adicionais" required></textarea>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <button type="button" class="btn btn-primary" onclick="salvar()">Salvar e Avançar</button>
+                </div>
 
-            <div>
-                <br><br>
-                <p>84. Haverá Outra forma de Desmonte?</p>
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                <label class="form-check-label" for="exampleRadios1">Mecânico</label>
-                <p></p>
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                <label class="form-check-label" for="exampleRadios1">Massa Expansiva</label>
-                <p></p>
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                <label class="form-check-label" for="exampleRadios1">Nenhum</label>
-            </div>
-
-            <br><br>
-            <h2>Mecânico</h2>
-
-            <div>
-                <br>
-                <p>85. Haverá desmonte mecânico?</p>
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                <label class="form-check-label" for="exampleRadios1">Sim</label>
-                <p></p>
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                <label class="form-check-label" for="exampleRadios1">Não</label>
-            </div>
-
-            <br>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button class="btn btn-primary me-md-2" type="button">Enviar e Avançar</button>
-            </div>
-
-        <div>
-            <br><br><br>
-            <nav aria-label="Page navigation example">
-                <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="index3.html">Pag. Anterior</a></li>
-                    <li class="page-item"><a class="page-link" href="index.html">1</a></li>
-                    <li class="page-item"><a class="page-link" href="index2.html">2</a></li>
-                    <li class="page-item"><a class="page-link" href="index3.html">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link" href="index5.html">5</a></li>
-                    <li class="page-item"><a class="page-link" href="index6.html">6</a></li>
-                    <li class="page-item"><a class="page-link" href="index5.html">Pag. Seguinte</a></li>
-                </ul>
-            </nav>
+                <!-- Navegação -->
+                <div>
+                    <br><br><br>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="index3.html">Pag. Anterior</a></li>
+                            <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                            <li class="page-item"><a class="page-link" href="index2.html">2</a></li>
+                            <li class="page-item"><a class="page-link" href="index3.html">3</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="index5.html">5</a></li>
+                            <li class="page-item"><a class="page-link" href="index6.html">6</a></li>
+                            <li class="page-item"><a class="page-link" href="index5.html">Pag. Seguinte</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </form>
         </div>
     </section>
 

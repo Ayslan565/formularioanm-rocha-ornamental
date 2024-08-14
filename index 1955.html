@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocha Ornamental e de Revestimento Nº 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvRqKHmCFCB7ljwOxdQuP9BkySSUf3uYngdg&s">
+    <script src="scripts1955.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="Imagens/Imagem_do_WhatsApp_de_2024-06-24_à_s__09.42.50_31c7da55-removebg-preview.png" id="img" width="200">
+        </div>
+        <div>
+            <h1 id="h1-header">Formulário A <BR>PAE Rocha Ornamental </h1>
+        </div>
+    </header>
+    <section>
+            <div>
+                <h2>Identificação do Empreendimento:</h2>
+                <br>
+                <div class="leis">
+                    <p><b>Legislação Pertinente</b></p>
+                    <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del0227.htm">Inciso II, art.38, Código de Mineração</a>
+                </div>
+            </div>
+            <br>
+            <!--Formulário -->
+            <form id="formulario1955">
+                <div>
+                    <br><br>
+                    <label id="label-nup" for="nup">1. Escreva o <b>NUP</b> completo do processo </label>
+                    <p> </p>
+                    <input type="number" id="nup" class="form-control"  required>
+                </div>
+                <div>
+                    <br><br>
+                    <label id="label-nome-empresa">2. Nome da empresa</label>
+                    <p> </p>
+                    <input type="text" id="nome-empresa" class="form-control" required>        
+                </div>
+                <div>
+                    <br><br>
+                    <label id="label-nome-empresa">3. Classe da Empresa</label>
+                    <p> </p>
+                    <input type="text" id="nome-empresa" class="form-control"  required>        
+                </div>
+                <div>
+                    <br><br>
+                    <label id="label-nome-empresa">4. Munícipio(s)</label>
+                    <p> </p>
+                    <input type="text" id="nome-empresa" class="form-control" required>        
+                </div>
+                <div>
+                    <br><br>
+                    <label id="label-uf" for="uf">5. Insira a UF</label>
+                    <p> </p>
+                    <select class="form-select" id="uf" required>
+                        <option value="">--Selecione--</option>
+                        <option>AC</option>
+                        <option>AL</option>
+                        <option>AP</option>
+                        <option>AM</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>DF</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MA</option>
+                        <option>MT</option>
+                        <option>MS</option>
+                        <option>MG</option>
+                        <option>PA</option>
+                        <option>PB</option>
+                        <option>PR</option>
+                        <option>PE</option>
+                        <option>PI</option>
+                        <option>RJ</option>
+                        <option>RN</option>
+                        <option>RS</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                        <option>SC</option>
+                        <option>SP</option>
+                        <option>SE</option>
+                        <option>TO</option>
+                    </select>
+                </div>
+                <div>
+                    <br><br>
+                    <label id="label-localidade-coordenadas">6. Descreva a localidade com as devidas coordenadas de referência da Lavra utilizando como referência UTM ou Datum SIRGAS2000.</label>
+                    <p> </p>
+                    <input type="text" id="localidade-coordenadas" class="form-control" required>        
+                </div>
+                <div>
+                    <br><br>
+                    <label id="label-uso-substancia">7. Uso previsto para a substância.</label>
+                    <p> </p>
+                    <input type="text" id="uso-substancia" class="form-control" required>        
+                </div>
+                <div>
+                    <br><br>
+                    <label id="label-sub-aprov">8. Substância aprovada no Relatório Final de Pesquisa ou constante no processo oriundo de disponibilidade.</label>
+                    <p></p>
+                    <input class="form-check-input" type="radio" name="substancia-aprovada" id="sim-sub-aprovada" value="sim">
+                    <label id="label-sim-sub-aprovada" for="sim-sub-aprovada">Sim</label>
+                    <p></p>
+                    <input class="form-check-input" type="radio" name="substancia-aprovada" id="nao-sub-aprovada" value="nao">
+                    <label id="label-nao-sub-aprovada" for="nao-sub-aprovada">Não</label>
+                    <p></p>
+                </div>
+                <div>
+                    <br><br>
+                    <h2>Verificação da regularidade da poligonal do processo minerário (controle de áreas)</h2>
+                    <br>
+                </div>
+                <div>
+                    <br><br>
+                    <label id="label-uso-substancia">9 .Área aprovada no Relatório Final de Pesquisa</label>
+                    <p> </p>
+                    <input type="text" id="uso-substancia" class="form-control" required>        
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label-uso-substancia">10 .Área requerida para lavra</label>
+                    <p> </p>
+                    <input type="text" id="uso-substancia" class="form-control" required>        
+                </div>
+                
+                
+                <div>
+                    <br><br>
+                    <label id="label-uso-substancia">11 .Minuta de Portaria de Lavra</label>
+                    <p> </p>
+                    <input type="text" id="uso-substancia" class="form-control" required>        
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label-uso-substancia">12 .Verificação de atos de cessão / transferência de direitos minerários</label>
+                    <p> </p>
+                    <input type="text" id="uso-substancia" class="form-control" required>        
+                </div>
+
+                <div>
+                    <br><br>
+                    <h2>Verificação de possíveis irregularidades </h2>
+                    <div class="leis">
+                        <p><b>Legislação Pertinente</b></p>
+                        <a href="https://www.planalto.gov.br/ccivil_03/leis/l8176.htm#:~:text=a%20cinco%20anos">Art.2 da Lei nº8.176/1991</a> <br><a href="Art.,a%20cinco%20anos%20e%20multa."> art.55 da Lei nº9.605/1998<br></a>
+                    </div>
+                    <br>
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label-uso-substancia">13 .Há alguma denúncia de lavra não autorizada ou ordem judicial pendente de atendimento que prejudique o curso do requerimento de lavra?</label>
+                    <p> </p>
+                    <input type="text" id="uso-substancia" class="form-control" required>        
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label-uso-substancia">14 Foi observada alguma imagem de satélite com indicativo de lavra não autorizada?</label>
+                    <p> </p>
+                    <input type="text" id="uso-substancia" class="form-control" required>        
+                </div>
+
+                <div>
+                    <br><br>
+                    <label id="label-uso-substancia">15. Posteriormente houve algum parecer conclusivo do setor competente com a devida comunicação aos órgãos competentes (MPF/Orgão Ambiental/Procuradoria da União, etc.), que possibilite dar continuidade ao curso do requerimento de lavra?</label>
+                    <p> </p>
+                    <input type="text" id="uso-substancia" class="form-control" required>        
+                </div>
+
+
+
+                <div>
+                    <br><br>
+                    <label id="label-uso-substancia">16. Existe Guia de Utilização vigente? Foi apresentado o(s) RAL(s)? A produção declarada anualmente encontra-se dentro do limite autorizado na GU?</label>
+                    <p> </p>
+                    <input type="text" id="uso-substancia" class="form-control" required>        
+                </div>
+
+
+
+                <div>
+                    <br><br>
+                    <h2>Indicadores relativos às reservas e produção:</h2>
+                    <br>
+                    <H5>Relatório Final de Pesquisa e/ou Relatório de Pesquisa Complementar</H5>
+                    <br><br>
+                    <div class="leis">
+                        <p><b>Legislação Pertinente</b></p>
+                        <a href="https://www.in.gov.br/en/web/dou/-/resolucao-n-94-de-7-de-fevereiro-de-2022-378640259  ">Inciso I, art.32, Código de Mineração </a><A HREF="https://anmlegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=DEL&numeroAto=00000227&seqAto=000&valorAno=1967&orgao=NI&cod_modulo=405&cod_menu=6783">"Art.32,  RCM 
+                            Resolução 94/2022"</a>
+                    </div>
+                </div>
+                <br><br>
+                <label id="label_reserv_provada" for="reserv_provada">17. Recurso medido</label>
+                <input id="reserv_provavel" type="number" class="form-control"required>        
+                </Div>
+
+                <div>
+                    <br><br>
+                    <label id="label_reserv_provavel" for="reserv_provavel">18. Recurso indicado</label>
+                    <input id="reserv_provavel" type="number" class="form-control" required>        
+                </div>
+
+                <Div>
+                    <br><br>
+                    <label id="label_reserv_provada" for="reserv_provada">19. Recurso inferido </label>
+                    <input id="reserv_provavel" type="number" class="form-control"required>        
+                    </Div>
+                <div>
+                    <br><br>
+                    <h2>Dados de conversão dos recursos medidos ou indicados em reservas provada e provável (após o RFP):</h2>
+                    <br><br>
+
+                    <br><br>
+                    <div class="leis">
+                        <p><b>Legislação Pertinente</b></p>
+                        <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del0227.htm">Inciso I, art.32, Código de Mineração </a><A HREF="https://anmlegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=DEL&numeroAto=00000227&seqAto=000&valorAno=1967&orgao=NI&cod_modulo=405&cod_menu=6783">"Art.32,  RCM 
+                            Resolução 94/2022"</a>
+                    </div>
+                </div>
+                <Div>
+                    <br><br>
+                <label id="label_reserv_provada" for="reserv_provada">20. Reserva Provada</label>
+                <input id="reserv_provavel" type="text" class="form-control"required>        
+                </Div>
+
+                <div>
+                    <br><br>
+                    <label id="label_reserv_provavel" for="reserv_provavel">21. Reserva provável</label>
+                    <input id="reserv_provavel" type="text" class="form-control" required>        
+                </div>
+
+                <Div>
+                    <br><br>
+                    <label id="label_reserv_provada" for="reserv_provada">22. Reserva remanescente provada </label>
+                    <input id="reserv_provavel" type="text" class="form-control"required>        
+                    </Div>
+    
+                    <div>
+                        <br><br>
+                        <label id="label_reserv_provavel" for="reserv_provavel">23.Reserva remanescente provada </label>
+                        <input id="reserv_provavel" type="text" class="form-control" required>        
+                    </div>
+
+                    <div>
+                        <br><br>
+                        <h2>Continuidade nos trabalhos de pesquisa mineral após aprovação do Relatório Final de Pesquisa</h2>
+                        <br>
+                    </div>
+                        <div class="leis">
+                            <p><b>Legislação Pertinente</b></p>
+                            <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del0227.htm">§ 7º, art.9, RCM</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <br><br>
+                        <label id="label-sub-aprov">24. Houve trabalhos de pesquisa mineral referente a novas substâncias minerais após a entrega do Relatório Final de Pesquisa?</label>
+                        <br><br>
+                        <input class="form-check-input" type="radio" name="substancia-aprovada" id="sim-sub-aprovada" value="sim">
+                        <label id="label-sim-sub-aprovada" for="sim-sub-aprovada">Sim</label>
+                        <p></p>
+                        <input class="form-check-input" type="radio" name="substancia-aprovada" id="nao-sub-aprovada" value="nao">
+                        <label id="label-nao-sub-aprovada" for="nao-sub-aprovada">Não</label>
+                        <p></p>
+                    </div>
+                
+                    <div>
+                        <br><br>
+                        <h2>Características da produção</h2>
+                        <br>
+                    </div>
+                
+                    <div class="leis">
+                        <p><b>Legislação Pertinente</b></p>
+                        <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del0227.htm">Art.39, C.M., II, </a>
+                        <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/delInciso VI,">  Res. 85/2021,</a>
+                        <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del0227.htm"> § 7º, art.9, RCM, </a>
+                    </div>
+                <br>
+                    <div>
+                        <label id="label_reserv_provavel" for="reserv_provavel">25. Escala de produção média de minério (t/ano)</label>
+                        <input id="reserv_provavel" type="text" class="form-control" required>        
+                    </div>
+                
+                    <div>
+                        <br><br>
+                        <label id="label-sub-aprov">26. Selecione o tipo de produto principal a ser gerado (qualidade exigida pelo mercado)</label>
+                    </div>
+                    <br>
+                    
+                    <button class="btn btn-primary" onclick="toggleVisibility('tabela-bruto')">Produto(s) Bruto(s)</button>
+                    <div id="tabela-bruto" class="hidden">
+                        <h3>Produto(s) Bruto(s)</h3>
+                        <table cellpadding="15" border="1" cellspacing="10">
+                            <tr>
+                                <th>Produto bruto</th>
+                                <th>Nome comercial do material</th>
+                                <th>Quantidade (m³/ano)</th>
+                                <th>Código da Nomenclatura Comum do Mercosul - NCM</th>
+                            </tr>
+                            <tr>
+                                <td>1ª Qualidade</td>
+                                <td><input type="text" name="bruto_1_qualidade_nome"></td>
+                                <td><input type="number" name="bruto_1_qualidade_quantidade"></td>
+                                <td><input type="text" name="bruto_1_qualidade_ncm"></td>
+                            </tr>
+                            <tr>
+                                <td>2ª Qualidade</td>
+                                <td><input type="text" name="bruto_2_qualidade_nome"></td>
+                                <td><input type="number" name="bruto_2_qualidade_quantidade"></td>
+                                <td><input type="text" name="bruto_2_qualidade_ncm"></td>
+                            </tr>
+                            <tr>
+                                <td>Comercial</td>
+                                <td><input type="text" name="bruto_comercial_nome"></td>
+                                <td><input type="number" name="bruto_comercial_quantidade"></td>
+                                <td><input type="text" name="bruto_comercial_ncm"></td>
+                            </tr>
+                            <tr>
+                                <td>Outros</td>
+                                <td><input type="text" name="bruto_outros_nome"></td>
+                                <td><input type="number" name="bruto_outros_quantidade"></td>
+                                <td><input type="text" name="bruto_outros_ncm"></td>
+                            </tr>
+                        </table>
+                    </div>
+                
+                    <br><br>
+                
+                    <button  class="btn btn-primary" onclick="toggleVisibility('tabela-beneficiado')">Produto(s) Beneficiado(s)</button>
+                    <div id="tabela-beneficiado" class="hidden">
+                        <h3>Produto(s) Beneficiado(s)</h3>
+                        <br>
+                        <table cellpadding="15" border="1" cellspacing="10">
+                            <tr>
+                                <th>Produtos beneficiados</th>
+                                <th>Nome comercial do material</th>
+                                <th>Quantidade (m³/ano)</th>
+                                <th>Distribuição (%)</th>
+                            </tr>
+                            <tr>
+                                <td>Chapas polidas</td>
+                                <td><input type="text" name="beneficiado_chapas_polidas_nome"></td>
+                                <td><input type="number" name="beneficiado_chapas_polidas_quantidade"></td>
+                                <td><input type="number" name="beneficiado_chapas_polidas_distribuicao"></td>
+                            </tr>
+                            <tr>
+                                <td>Chapas não polidas</td>
+                                <td><input type="text" name="beneficiado_chapas_nao_polidas_nome"></td>
+                                <td><input type="number" name="beneficiado_chapas_nao_polidas_quantidade"></td>
+                                <td><input type="number" name="beneficiado_chapas_nao_polidas_distribuicao"></td>
+                            </tr>
+                            <tr>
+                                <td>Ladrilhos</td>
+                                <td><input type="text" name="beneficiado_ladrilhos_nome"></td>
+                                <td><input type="number" name="beneficiado_ladrilhos_quantidade"></td>
+                                <td><input type="number" name="beneficiado_ladrilhos_distribuicao"></td>
+                            </tr>
+                            <tr>
+                                <td>Outros</td>
+                                <td><input type="text" name="beneficiado_outros_nome"></td>
+                                <td><input type="number" name="beneficiado_outros_quantidade"></td>
+                                <td><input type="number" name="beneficiado_outros_distribuicao"></td>
+                            </tr>
+                        </table>
+                    </div> 
+                    <div>
+                        <br><br>
+                        <label id="label-sub-aprov">27. Tipo(s) de produto(s) secundário(s) a ser gerado,<br> Haverá etapa de beneficiamento? </label>
+                        <p></p>
+                        <input class="form-check-input" type="radio" name="substancia-aprovada" id="sim-sub-aprovada" value="bruto">
+                        <label id="label-sim-sub-aprovada" for="sim-sub-aprovada">Sim</label>
+                        <p></p>
+                        <input class="form-check-input" type="radio" name="substancia-aprovada" id="nao-sub-aprovada" value="beneficiado">
+                        <label id="label-nao-sub-aprovada" for="nao-sub-aprovada">Não</label>
+                        <p></p>
+                        </div>
+                        <table  cellpadding="15" border="1" cellspacing="10">
+                            <tr>
+                            <th>Produtos secundários</th>
+                            <th>Nome comercial do material</th>
+                            <th>Quantidade (m³/ano)</th>
+                            <th>Distribuição (%)</th>
+                            </tr>
+                            <tr>
+                            <td>P1</td>
+                            <td><input type="text" name="beneficiado-chapas-polidas-nome"></td>
+                            <td><input type="number" name="beneficiado-chapas-polidas-quantidade"></td>
+                            <td><input type="number" name="beneficiado-chapas-polidas-distribuicao"></td>
+                            </tr>
+                            <tr>
+                            <td>P2</td>
+                            <td><input type="text" name="beneficiado-chapas-nao-polidas-nome"></td>
+                            <td><input type="number" name="beneficiado-chapas-nao-polidas-quantidade"></td>
+                            <td><input type="number" name="beneficiado-chapas-nao-polidas-distribuicao"></td>
+                            </tr>
+                            <tr>
+                            <td>P3</td>
+                            <td><input type="text" name="beneficiado-ladrilhos-nome"></td>
+                            <td><input type="number" name="beneficiado-ladrilhos-quantidade"></td>
+                            <td><input type="number" name="beneficiado-ladrilhos-distribuicao"></td>
+                            </tr>
+                            <tr>
+                            <td>P4</td>
+                            <td><input type="text" name="beneficiado-outros-nome"></td>
+                            <td><input type="number" name="beneficiado-outros-quantidade"></td>
+                            <td><input type="number" name="beneficiado-outros-distribuicao"></td>
+                            </tr>
+                            <tr>
+                                <td>P5</td>
+                                <td><input type="text" name="beneficiado-outros-nome"></td>
+                                <td><input type="number" name="beneficiado-outros-quantidade"></td>
+                                <td><input type="number" name="beneficiado-outros-distribuicao"></td>
+                                </tr>
+                            </table>
+                            </div>
+                            <div>
+                                <br><br>
+                                <label id="label_reserv_provavel" for="reserv_provavel">28.Recuperação média na lavra do empreendimento (%) </label>
+                                <input id="reserv_provavel" type="number" class="form-control" required>        
+                            </div>
+                            <div>
+                                <br><br>
+                                <label id="label_reserv_provavel" for="reserv_provavel">29.Quantidade média de estéril gerada no empreendimento (t/ano) </label>
+                                <input id="reserv_provavel" type="number" class="form-control" required>        
+                            </div>
+                            <div>
+                                <br><br>
+                                <label id="label_reserv_provavel" for="reserv_provavel">30.Vida útil da jazida (anos) </label>
+                                <input id="reserv_provavel" type="number" class="form-control" required>    
+                                <br> <br>   
+                            </div>
+                            <!--Aq tem  lei-->
+                            <div>
+                                <h2>Tipo de Lavra</h2>
+                                <br>
+                                <div class="leis">
+                                    <p><b>Legislação Pertinente</b></p>
+                                    <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del0227.htm">Alínea "a", inciso II, art.39, C.M.</a>
+                                </div>
+                            </div>
+                            <div>
+                                <br><br>
+                                <label id="label_reserv_provavel" for="reserv_provavel">31. Informar a modalidade de lavra 
+                                </label>
+                                <input id="reserv_provavel" type="number" class="form-control" required>        
+                            </div>
+                            <div>
+                                <br><br>
+                                <label id="label_reserv_provavel" for="reserv_provavel">32. Informar o método de lavra</label>
+                                <input id="reserv_provavel" type="number" class="form-control" required>        
+                            </div>
+                            <br>
+                            <div>
+                                <h2>Infraestrutura</h2>
+                                <div class="leis">
+                                <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del0227.htm">art.59, C.M..</a>
+                            </div>
+
+                                <br>
+                                
+                            </div>
+
+                            <h3>Instalações da Mina</h3>
+                            <div>
+                                <br><br>
+                                <label for="oficinas" id="label_oficinas">33. Refeitórios:</label>
+                                <input type="number" id="oficinas" class="form-control" placeholder="Informe a quantidade de oficinas" required>
+                            </div>
+                            <div>
+                                <br><br>
+                                <label for="subestacoes_energia" id="label_subestacoes_energia">34.Alojamentos</label>
+                                <input type="number" id="subestacoes_energia" class="form-control" required>
+                            </div>
+                            <div>
+                                <br><br>
+                                <label for="adutoras" id="label_adutoras">35. Substações de energia:</label>
+                                <input type="number" id="adutoras" class="form-control" required>
+                            </div>
+                            <div>
+                                <br><br>
+                                <label for="escritorios" id="label_escritorios">35. Almoxarifados:</label>
+                                <input type="number" id="escritorios" class="form-control"  required>
+                            </div>
+                            <div>
+                                <br><br>
+                                <label for="outros" id="label_outros">36. Adutoras:</label>
+                                <input type="text" id="outros" class="form-control" required>
+                            </div>
+                    
+                            <div>
+                                <br><br>
+                                <label for="oficinas" id="label_oficinas">37. Escritórios:</label>
+                                <input type="number" id="oficinas" class="form-control"  required>
+                            </div>
+                            <div>
+                                <br><br>
+                                <label for="subestacoes_energia" id="label_subestacoes_energia">38. Paióis</label>
+                                <input type="number" id="subestacoes_energia" class="form-control" required>
+                            </div>
+                            <div>
+                                <br><br>
+                                <label for="outros" id="label_outros">39. Outros:</label>
+                                <input type="text" id="outros" class="form-control"  required>
+                            </div>
+                            <div>
+                                <br><br>
+                                <label for="outros" id="label_outros">40. Total:</label>
+                                <input type="text" id="outros" class="form-control" required>
+                            </div>
+                    
+                            <div>
+                                <br><br>
+                                <label for="outros" id="label_outros">41.Requerimento de área de servidão mineral se aplicável:</label>
+                                <input type="text" id="outros" class="form-control" required>
+                                <br><br>
+                            </div>
+                    
+                            <div>
+                                <h2>Plantas / mapas</h2>
+                                <br>
+                            </div>
+
+                            <div>
+                                <br>
+                                <label id="label_" for="exampleFormControlFile1">42. Apresentar mapas, plantas, fotografias, imagens de satélite e/ou  imagens aéreas com alta resolução, demonstrando que não há indícios de lavra não autorizada nas mediações das frentes de lavra pretendidas. Anexar arquivo em pdf, na extensão shapefile ("shp") e/ou GeoTIFF conforme orientação a seguir.</p>
+                                <p class="textodesc"><b>NOTA: O(s) documentos descrito(s) devem estar padronizados conforme as normas da ABNT, apresentados em escala de detalhe para uma caracterização detalhada, sendo que os dados vetoriais devem ser entregues no formato SHP, e as imagens raster devem ser georreferenciadas e apresentadas no formato GeoTIFF. Os dados digitais deverão ser compatíveis para serem visualizados em ambiente de Sistema de Informação Geográfica (SIG) em coordenadas geodésicas - DATUM SIRGAS 2000</b></p>
+                                <input id="" type="file" class="form-control" required  id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                <h7 class="Importante textodesc"><br>Limite de número de arquivos: 2</h7>
+                                <h7 class="Importante textodesc"><br>Limite de tamanho de arquivo único: 100MB</h7>
+                                <h7 class="Importante textodesc"><br>Tipos de arquivo permitidos: PDF</h7>
+                                <br><br>
+                            </div>
+
+                            <div>
+                                <br><br>
+                                <label id="label_" for="exampleFormControlFile1">43. Apresentar planta de situação deverá ser georreferenciada em sistema de coordenadas geográficas, datum SIRGAS2000, assinada por profissional legalmente habilitado e apresentada em escala adequada, contendo, além da configuração gráfica da área, os principais elementos cartográficos, tais como ferrovias, rodovias, dutovias e outras obras civis, rios, córregos, lagos, áreas urbanas, denominação das propriedades, ressaltando limites municipais e divisas estaduais, quando houver, bem como direitos minerários limítrofes. Anexar arquivo em pdf, na extensão shapefile ("shp") e/ou GeoTIFF conforme orientação a seguir.</p>
+                                <p class="textodesc"><b>NOTA: O(s) documentos descrito(s) devem estar padronizados conforme as normas da ABNT, apresentados em escala de detalhe para uma caracterização detalhada, sendo que os dados vetoriais devem ser entregues no formato SHP, e as imagens raster devem ser georreferenciadas e apresentadas no formato GeoTIFF. Os dados digitais deverão ser compatíveis para serem visualizados em ambiente de Sistema de Informação Geográfica (SIG), coordenadas geodésicas - DATUM SIRGAS 2000</b></p>
+                                <input id="" type="file" class="form-control" required  id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                <h7 class="Importante textodesc"><br>Limite de número de arquivos: 2</h7>
+                                <h7 class="Importante textodesc"><br>Limite de tamanho de arquivo único: 100MB</h7>
+                                <h7 class="Importante textodesc"><br>Tipos de arquivo permitidos: PDF</h7>
+                                <br><br>
+                            </div>
+
+
+
+                            <div>
+                                <br><br>
+                                <label id="label_" for="exampleFormControlFile1">44. Apresentar planta de detalhe em escala adequada georreferenciada em coordenadas geográficas, datum SIRGAS2000, a poligonal do processo minerário e a configuração da(s) propriedade(s) territorial(is) e nome(s) do(s) respectivo(s) superficiário(s). Anexar arquivo em pdf, na extensão shapefile ("shp") e/ou GeoTIFF conforme orientação a seguir. NOTA: O(s) documentos descrito(s) devem estar padronizados conforme as normas da ABNT, apresentados em escala de detalhe para uma caracterização detalhada.</p>
+                                <p class="textodesc"><b>NOTA: Os dados vetoriais devem ser entregues no formato SHP, e as imagens raster devem ser georreferenciadas e apresentadas no formato GeoTIFF. Os dados digitais deverão ser compatíveis para serem visualizados em ambiente de Sistema de Informação Geográfica (SIG), coordenadas geodésicas - DATUM SIRGAS 2000</b></p>
+                                <input id="" type="file" class="form-control" required  id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                <h7 class="Importante textodesc"><br>Limite de número de arquivos: 2</h7>
+                                <h7 class="Importante textodesc"><br>Limite de tamanho de arquivo único: 100MB</h7>
+                                <h7 class="Importante textodesc"><br>Tipos de arquivo permitidos: PDF</h7>
+                                <br><br>
+                            </div>
+
+
+                            <div>
+                                <br><br>
+                                <label id="label_" for="exampleFormControlFile1">45. Apresentar planta de detalhe em escala adequada georreferenciada em coordenadas geográficas, datum SIRGAS2000, a poligonal do processo minerário e a configuração da(s) propriedade(s) territorial(is) e nome(s) do(s) respectivo(s) superficiário(s). Anexar arquivo em pdf, na extensão shapefile ("shp") e/ou GeoTIFF conforme orientação a seguir. </p>
+                                <p class="textodesc"><b>NOTA: O(s) documentos descrito(s) devem estar padronizados conforme as normas da ABNT, apresentados em escala de detalhe para uma caracterização detalhada, sendo que os dados vetoriais devem ser entregues no formato SHP, e as imagens raster devem ser georreferenciadas e apresentadas no formato GeoTIFF. Os dados digitais deverão ser compatíveis para serem visualizados em ambiente de Sistema de Informação Geográfica (SIG), coordenadas geodésicas - DATUM SIRGAS 2000</b></p>
+                                <input id="" type="file" class="form-control" required  id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                <h7 class="Importante textodesc"><br>Limite de número de arquivos: 2</h7>
+                                <h7 class="Importante textodesc"><br>Limite de tamanho de arquivo único: 100MB</h7>
+                                <h7 class="Importante textodesc"><br>Tipos de arquivo permitidos: PDF</h7>
+                                <br><br>
+                            </div>
+
+                            <div>
+                                <br><br><br>
+                                <h2>Documentação a ser anexada caso necessário (a depender do projeto)</h2>
+                                <div class="leis">
+                                    <p class="textodesc"><b>Legislação Pertinente</b></p>
+                                    <p class="textodesc"><a href="https://anmlegis.datalegis.net/action/UrlPublicasAction.php?acao=abrirAtoPublico&num_ato=00000068&sgl_tipo=RES&sgl_orgao=ANM/MME&vlr_ano=2021&seq_ato=000&cod_tipo=&des_item=&des_item_fim=&num_linha=">Art.32, RCM, Resolução 68/2021</a></p>
+                                </div>
+                            </div>
+                
+                            <div>
+                                <br><br>
+                                <label id="procuração" for="procuração_file">46. Procuração (original ou cópia autenticada) expedida pelo titular ao requerente.</label>
+                                <p></p>
+                                <input id="procuração_file" type="file" class="form-control" required aria-describedby="procuração_file_addon" aria-label="Upload">
+                                <br>
+                                <h7 class="importante textodesc">Limite de número de arquivos: 1</h7>
+                                <h7 class="importante textodesc"><br>Limite de tamanho de arquivo único: 100MB</h7>
+                                <h7 class="importante textodesc"><br>Tipos de arquivo permitidos: PDF</h7>
+                                <br><br>
+                            </div>
+            
+                            <div>
+                                <br><br>
+                                <label id="art_responsável_técnico_pae" for="art_responsável_técnico_pae_file">47. ART do responsável técnico pela elaboração do PAE.</label>
+                                <p></p>
+                                <div class="leis">
+                                    <p class="textodesc"><b>Legislação Pertinente</b></p>
+                                    <p class="textodesc"><a href="https://anmlegis.datalegis.net/action/UrlPublicasAction.php?acao=abrirAtoPublico&num_ato=00000068&sgl_tipo=RES&sgl_orgao=ANM/MME&vlr_ano=2021&seq_ato=000&cod_tipo=&des_item=&des_item_fim=&num_linha=">Art.32, RCM, Resolução 68/2021</a></p>
+                                </div>
+                                <br>
+                                <input id="art_responsável_técnico_pae_file" type="file" class="form-control" required aria-describedby="art_responsável_técnico_pae_file_addon" aria-label="Upload">
+                                <br>
+                                <h7 class="importante textodesc">Limite de número de arquivos: 1</h7>
+                                <h7 class="importante textodesc"><br>Limite de tamanho de arquivo único: 100MB</h7>
+                                <h7 class="importante textodesc"><br>Tipos de arquivo permitidos: PDF</h7>
+                                <br><br>
+                            </div>
+
+                            <div>
+                                <br><br>
+                                <label id="certidão_junta_comercial" for="certidão_junta_comercial_file">48. Certidão da titular na Junta Comercial.</label>
+                                <p></p>
+                                <div class="leis">
+                                    <p class="textodesc"><b>Legislação Pertinente</b></p>
+                                    <p class="textodesc"><a href="https://anmlegis.datalegis.net/action/TematicaAction.php?acao=abrirVinculos&cotematica=13596156&cod_menu=6783&cod_modulo=405">Inciso VII, art.38, Código de Mineração. e art.124 da Portaria DNPM/MME nº155/2016.</a></p>
+                                </div>
+                                <br>
+                                <input id="certidão_junta_comercial_file" type="file" class="form-control" required aria-describedby="certidão_junta_comercial_file_addon" aria-label="Upload">
+                                <br>
+                                <h7 class="importante textodesc">Limite de número de arquivos: 1</h7>
+                                <h7 class="importante textodesc"><br>Limite de tamanho de arquivo único: 100MB</h7>
+                                <h7 class="importante textodesc"><br>Tipos de arquivo permitidos: PDF</h7>
+                                <br><br>
+                            </div>
+
+                            <div>
+                                <br><br>
+                                <label id="prova_disponibilidade_fundos" for="prova_disponibilidade_fundos_file">49. Prova de disponibilidade de fundos.</label>
+                                <p></p>
+                                <div class="leis">
+                                    <p class="textodesc"><b>Legislação Pertinente</b></p>
+                                    <p class="textodesc"><a href="https://anmlegis.datalegis.net/action/TematicaAction.php?acao=abrirVinculos&cotematica=13596156&cod_menu=6783&cod_modulo=405">Inciso VII, art.38, Código de Mineração. e art.124 da Portaria DNPM/MME nº155/2016.</a></p>
+                                </div>
+                                <br>
+                                <input id="prova_disponibilidade_fundos_file" type="file" class="form-control" required aria-describedby="prova_disponibilidade_fundos_file_addon" aria-label="Upload">
+                                <br>
+                                <h7 class="importante textodesc">Limite de número de arquivos: 1</h7>
+                                <h7 class="importante textodesc"><br>Limite de tamanho de arquivo único: 100MB</h7>
+                                <h7 class="importante textodesc"><br>Tipos de arquivo permitidos: PDF</h7>
+                                <br><br>
+                            </div>
+
+                            <div>
+                                <br><br>
+                                <label id="label_" for="exampleFormControlFile1">50. Comprovação de assentimento prévio do Conselho de Defesa Nacional, se for o caso (faixa de fronteira) ou de outros órgãos públicos (federal, estadual ou municipal) quando a propriedade territorial pertencer a estes.</label>
+                                <p></p>
+                                <div class="leis_coprovacao_assentimento_cdn_faixa">
+                                    <div class="leis">
+                                    <p class="textodesc"><b>Legislação Pertinente</b></p>
+                                    <p class="textodesc"><a href="https://anmlegis.datalegis.net/action/TematicaAction.php?acao=abrirVinculos&cotematica=13596156&cod_menu=6783&cod_modulo=405">Art.16 do Decreto nº85.064/1980, combinado com a Lei 8.183/1991.</a></p>
+                                </div>
+                
+                                <br>
+                                <input id="coprovacao_assentimento_cdn" type="file" class="form-control" required  id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                <br>
+                                <h7 class="Importante textodesc">Limite de número de arquivos: 1</h7>
+                                <h7 class="Importante textodesc"><br>Limite de tamanho de arquivo único: 100MB</h7>
+                                <h7 class="Importante textodesc"><br>Tipos de arquivo permitidos: PDF</h7>
+                                <br><br>
+                            </div>
+                            <div>
+                                <ul class="list-unstyled">
+                                    <li>51. Licença Ambiental</li>
+                                    <br>
+                                    <li>1. Deve haver campos específicos para inserção do número da licença e data de vencimento.</li>
+                                    <br>
+                                    <li> 2. Inserir uma nota explicativa, a qual informe que a classe e substância da licença ambiental de instalação ou documento equivalente estejam compatíveis com as informações constantes no PAE.</li>
+                                    <br>
+                                    <li>3. A licença ambiental deve  atender os seguintes parâmetros.</li>
+                                    <br>
+                                    <ul class="textodesc">
+                                        <li>Ser apresentada em original ou cópia autenticada.</li>
+                                        <li>Estar vigente.</li>
+                                        <li>Quando cópia autenticada, ter legível a identificação do autenticador.</li>
+                                        <li>Ser instruída com o número do processo.</li>
+                                        <li>Estar em nome do titular do direito minerário.</li>
+                                        <li>A área constante na licença deve estar inserida na área constante do despacho de aprovação do RFP.</li>
+                                        <li>A substância licenciada deve estar de acordo com aquela requerida.</li>
+                                        <li>Em caso de mais de uma substância a licença deverá abranger todas elas.</li>
+                                        <li>Em caso de mais de um município, a licença deverá abranger todos eles.</li>
+                                        <li>Em caso de mais de um estado, a licença apresentada deve ser correspondente aos mesmos.</li>
+                                    </ul>
+                                    </li>
+                                    <br>
+                                    <input id="infomacoes_complemetares" type="file" class="form-control" required  id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                    <br>
+                                    <h7 class="Importante textodesc">Limite de número de arquivos: 1</h7>
+                                    <h7 class="Importante textodesc"><br>Limite de tamanho de arquivo único: 100MB</h7>
+                                    <h7 class="Importante textodesc"><br>Tipos de arquivo permitidos: PDF</h7>
+                                </div>
+                                <br>
+                                    <li> Na hipótese de licença ambiental de operação ou documento equivalente vigente para Guia de  Utilização, caso não venha expresso nas condicionantes a utilização da licença para fins de obtenção de Portaria de Lavra deverá ser apresentado uma nova licença de instalação ou documento expedido pelo órgão ambiental para tal.</li>
+                                </ul>
+                                <br>
+                            </div>
+                            <div>
+                                <br><br>
+                                <label id="label_" for="exampleFormControlFile1">Infromações complemetares.</label>
+                                <input id="" type="file" class="form-control" required  id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">          
+                                <h7 class="Importante textodesc"><br>Limite de número de arquivos: 1</h7>
+                                <h7 class="Importante textodesc"><br>Limite de tamanho de arquivo único: 100MB</h7>
+                                <h7 class="Importante textodesc"><br>Tipos de arquivo permitidos: Word, Excel, PPT, PDF, Imagem, Vídeo, Áudio</h7>
+                                <p></p>        
+                            </div>
+                            <div>
+                                <br>
+                                <h2>Comentários</h2>
+                                <br>
+                            </div>
+                            <div>
+                                <p></p>
+                                <input id="infomacoes_complemetares" type="file" class="form-control" required  id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                <br>
+                                <h7 class="Importante textodesc">Limite de número de arquivos: 1</h7>
+                                <h7 class="Importante textodesc"><br>Limite de tamanho de arquivo único: 100MB</h7>
+                                <h7 class="Importante textodesc"><br>Tipos de arquivo permitidos: PDF</h7>
+                            </div>
+                        </div>
+
+                <div class="text-center mt-4">
+                    <button type="button" class="btn btn-primary" onclick="salvar()">Salvar e Avançar</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <footer>
+        <img src="Imagens/Imagem_do_WhatsApp_de_2024-06-24_à_s__09.42.50_31c7da55-removebg-preview.png" width="200">
+        ©Todos os direitos Reservados - 2024
+    </footer>
+</body>
+</html>
