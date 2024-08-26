@@ -1,0 +1,82 @@
+.Importante{color: red;}
+
+form-control{min-width:300px;}
+
+#subtitulo{
+    margin-left: 2.5%;
+}
+
+header{
+    background-color: #003367;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+#h1-header{
+    text-align: center;
+    margin-top:-80px;
+    font-size: 50px;
+    margin-bottom: 50px;    
+}
+
+section{
+    padding: 5%;
+    background-color: aliceblue;
+    font-size: large;
+    margin-right: 50px;
+    margin-left: 50px;
+    box-shadow: 0px 0px 6px black;
+    border-radius: 15px;
+
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+footer{
+        background-color: rgba(0, 0, 0, 0.911);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: whitesmoke;
+}
+h2{color: rgb(0, 68, 255);}
+
+.textodesc{
+    font-size: 14px;
+}
+.download-link{
+padding:10px 20px;
+background-color: #003367;
+color: white;
+border-radius: 15px;
+margin-left: 30%;
+font-weight: bold;
+text-decoration: none;
+text-align: justify;}
+
+/*Desenvolvido por Ayslan Araújo e José Miguel Madureira*/
+#download-f1{background-color: #003367;}
+
+.leis{border: solid black 1px;
+    padding: 2%;
+    background-color: white;
+    border-radius: 15px;
+    margin-right: 75%;}
+
+.progress{border: solid black 1px;}
+
+
+.pagination .page-item.active .page-link {
+    background-color: #007bff;
+    color: white; 
+    border-color: #007bff; 
+}
+
+.pagination .page-item.active .page-link:hover {
+    background-color: #0056b3; 
+    color: white; 
+}
