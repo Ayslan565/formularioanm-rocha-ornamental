@@ -10,13 +10,15 @@ header{
     background-color: #003367;
     color: whitesmoke;
     padding: 10px;
+    text-align:justify;
 }
 
 #h1-header{
-    text-align: center;
+    text-align: start;
     margin-top:-80px;
     font-size: 50px;
-    margin-bottom: 50px;    
+    margin-bottom: 50px;
+    padding-left :3%;    
 }
 
 section{
@@ -29,12 +31,18 @@ section{
     border-radius: 15px;
 
 }
-
+.titulo{
+    text-align: start;
+    
+}
 .hidden {
     display: none;
 }
 
-
+.logo{
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 footer{
         background-color: rgba(0, 0, 0, 0.911);
